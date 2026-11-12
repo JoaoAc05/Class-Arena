@@ -1,0 +1,19 @@
+{
+  "name": "class-arena",
+  "version": "1.7.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node tests/smoke.mjs"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5",
+    "jspdf": "^2.5.2"
+  }
+}
