@@ -1,0 +1,27 @@
+{
+  "format": "class-arena-questions",
+  "version": 1,
+  "questions": [
+    {
+      "id": "exemplo-001",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Converta (1010)₂ para decimal.",
+      "options": [
+        "8",
+        "10",
+        "12",
+        "14"
+      ],
+      "answer": "B",
+      "difficulty": "Fácil",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Some as potências de 2 correspondentes aos bits 1.",
+      "explanation": "8 + 2 = 10.",
+      "active": true
+    }
+  ]
+}

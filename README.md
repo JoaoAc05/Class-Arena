@@ -1,4 +1,4 @@
-# CLASS ARENA — v1.7.1
+# CLASS ARENA
 
 Aplicação web local para organizar competições educativas em sala de aula. O professor controla as atividades pelo painel administrativo e exibe questões, cronômetro e resultados em uma segunda janela de projeção.
 
@@ -57,5 +57,3 @@ Os atalhos de operação não são acionados durante a digitação.
 - O banco de dados depende do navegador, perfil e endereço utilizados. **Faça backups antes de atualizar ou restaurar dados**; a restauração substitui o conteúdo atual.
 - A seleção automática de questões utiliza a primeira questão elegível, não um sorteio aleatório.
 - O projeto possui verificações estáticas; o build completo e a homologação funcional em navegador/sala de aula ainda devem ser realizados.
-
-**Versão 1.7.1:** convite ilustrado do aluno integrado, mantendo as regras e funcionalidades da v1.7.0.

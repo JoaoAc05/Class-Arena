@@ -1,0 +1,2842 @@
+{
+  "format": "class-arena-questions",
+  "version": 1,
+  "questions": [
+    {
+      "id": "ca26-0001",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Converta (1101) na base 2 para decimal.",
+      "options": [
+        "14",
+        "15",
+        "11",
+        "13"
+      ],
+      "answer": "D",
+      "difficulty": "Fácil",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Em base 2, cada posição vale uma potência de 2, começando por 2⁰ à direita.",
+      "explanation": "1101 (base 2) = 1×2^3 + 1×2^2 + 0×2^1 + 1×2^0 = 13.",
+      "active": true
+    },
+    {
+      "id": "ca26-0002",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Converta (23) na base 8 para decimal.",
+      "options": [
+        "19",
+        "27",
+        "20",
+        "17"
+      ],
+      "answer": "A",
+      "difficulty": "Fácil",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Em base 8, cada posição vale uma potência de 8, começando por 8⁰ à direita.",
+      "explanation": "23 (base 8) = 2×8^1 + 3×8^0 = 19.",
+      "active": true
+    },
+    {
+      "id": "ca26-0003",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Converta (1B) na base 16 para decimal.",
+      "options": [
+        "27",
+        "25",
+        "28",
+        "43"
+      ],
+      "answer": "A",
+      "difficulty": "Fácil",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Em base 16, cada posição vale uma potência de 16, começando por 16⁰ à direita.",
+      "explanation": "1B (base 16) = 1×16^1 + 11×16^0 = 27.",
+      "active": true
+    },
+    {
+      "id": "ca26-0004",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Converta (100010) na base 2 para decimal.",
+      "options": [
+        "36",
+        "35",
+        "34",
+        "32"
+      ],
+      "answer": "C",
+      "difficulty": "Fácil",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Em base 2, cada posição vale uma potência de 2, começando por 2⁰ à direita.",
+      "explanation": "100010 (base 2) = 1×2^5 + 0×2^4 + 0×2^3 + 0×2^2 + 1×2^1 + 0×2^0 = 34.",
+      "active": true
+    },
+    {
+      "id": "ca26-0005",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Converta (55) na base 8 para decimal.",
+      "options": [
+        "46",
+        "53",
+        "43",
+        "45"
+      ],
+      "answer": "D",
+      "difficulty": "Fácil",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Em base 8, cada posição vale uma potência de 8, começando por 8⁰ à direita.",
+      "explanation": "55 (base 8) = 5×8^1 + 5×8^0 = 45.",
+      "active": true
+    },
+    {
+      "id": "ca26-0006",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Converta (3A) na base 16 para decimal.",
+      "options": [
+        "59",
+        "56",
+        "58",
+        "74"
+      ],
+      "answer": "C",
+      "difficulty": "Fácil",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Em base 16, cada posição vale uma potência de 16, começando por 16⁰ à direita.",
+      "explanation": "3A (base 16) = 3×16^1 + 10×16^0 = 58.",
+      "active": true
+    },
+    {
+      "id": "ca26-0007",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Converta (1001001) na base 2 para decimal.",
+      "options": [
+        "75",
+        "71",
+        "73",
+        "74"
+      ],
+      "answer": "C",
+      "difficulty": "Fácil",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Em base 2, cada posição vale uma potência de 2, começando por 2⁰ à direita.",
+      "explanation": "1001001 (base 2) = 1×2^6 + 0×2^5 + 0×2^4 + 1×2^3 + 0×2^2 + 0×2^1 + 1×2^0 = 73.",
+      "active": true
+    },
+    {
+      "id": "ca26-0008",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Converta (126) na base 8 para decimal.",
+      "options": [
+        "86",
+        "94",
+        "84",
+        "87"
+      ],
+      "answer": "A",
+      "difficulty": "Fácil",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Em base 8, cada posição vale uma potência de 8, começando por 8⁰ à direita.",
+      "explanation": "126 (base 8) = 1×8^2 + 2×8^1 + 6×8^0 = 86.",
+      "active": true
+    },
+    {
+      "id": "ca26-0009",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Converta (63) na base 16 para decimal.",
+      "options": [
+        "97",
+        "99",
+        "100",
+        "115"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Em base 16, cada posição vale uma potência de 16, começando por 16⁰ à direita.",
+      "explanation": "63 (base 16) = 6×16^1 + 3×16^0 = 99.",
+      "active": true
+    },
+    {
+      "id": "ca26-0010",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Converta (1101011) na base 2 para decimal.",
+      "options": [
+        "109",
+        "105",
+        "107",
+        "108"
+      ],
+      "answer": "C",
+      "difficulty": "Média",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Em base 2, cada posição vale uma potência de 2, começando por 2⁰ à direita.",
+      "explanation": "1101011 (base 2) = 1×2^6 + 1×2^5 + 0×2^4 + 1×2^3 + 0×2^2 + 1×2^1 + 1×2^0 = 107.",
+      "active": true
+    },
+    {
+      "id": "ca26-0011",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Converta (171) na base 8 para decimal.",
+      "options": [
+        "129",
+        "121",
+        "119",
+        "122"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Em base 8, cada posição vale uma potência de 8, começando por 8⁰ à direita.",
+      "explanation": "171 (base 8) = 1×8^2 + 7×8^1 + 1×8^0 = 121.",
+      "active": true
+    },
+    {
+      "id": "ca26-0012",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Converta (87) na base 16 para decimal.",
+      "options": [
+        "151",
+        "133",
+        "135",
+        "136"
+      ],
+      "answer": "C",
+      "difficulty": "Média",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Em base 16, cada posição vale uma potência de 16, começando por 16⁰ à direita.",
+      "explanation": "87 (base 16) = 8×16^1 + 7×16^0 = 135.",
+      "active": true
+    },
+    {
+      "id": "ca26-0013",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Converta (10010010) na base 2 para decimal.",
+      "options": [
+        "146",
+        "148",
+        "144",
+        "147"
+      ],
+      "answer": "A",
+      "difficulty": "Média",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Em base 2, cada posição vale uma potência de 2, começando por 2⁰ à direita.",
+      "explanation": "10010010 (base 2) = 1×2^7 + 0×2^6 + 0×2^5 + 1×2^4 + 0×2^3 + 0×2^2 + 1×2^1 + 0×2^0 = 146.",
+      "active": true
+    },
+    {
+      "id": "ca26-0014",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Converta (255) na base 8 para decimal.",
+      "options": [
+        "181",
+        "174",
+        "171",
+        "173"
+      ],
+      "answer": "D",
+      "difficulty": "Média",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Em base 8, cada posição vale uma potência de 8, começando por 8⁰ à direita.",
+      "explanation": "255 (base 8) = 2×8^2 + 5×8^1 + 5×8^0 = 173.",
+      "active": true
+    },
+    {
+      "id": "ca26-0015",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Converta (BF) na base 16 para decimal.",
+      "options": [
+        "207",
+        "192",
+        "189",
+        "191"
+      ],
+      "answer": "D",
+      "difficulty": "Média",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Em base 16, cada posição vale uma potência de 16, começando por 16⁰ à direita.",
+      "explanation": "BF (base 16) = 11×16^1 + 15×16^0 = 191.",
+      "active": true
+    },
+    {
+      "id": "ca26-0016",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Converta (11001101) na base 2 para decimal.",
+      "options": [
+        "205",
+        "203",
+        "206",
+        "207"
+      ],
+      "answer": "A",
+      "difficulty": "Média",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Em base 2, cada posição vale uma potência de 2, começando por 2⁰ à direita.",
+      "explanation": "11001101 (base 2) = 1×2^7 + 1×2^6 + 0×2^5 + 0×2^4 + 1×2^3 + 1×2^2 + 0×2^1 + 1×2^0 = 205.",
+      "active": true
+    },
+    {
+      "id": "ca26-0017",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Converta (333) na base 8 para decimal.",
+      "options": [
+        "219",
+        "217",
+        "220",
+        "227"
+      ],
+      "answer": "A",
+      "difficulty": "Média",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Em base 8, cada posição vale uma potência de 8, começando por 8⁰ à direita.",
+      "explanation": "333 (base 8) = 3×8^2 + 3×8^1 + 3×8^0 = 219.",
+      "active": true
+    },
+    {
+      "id": "ca26-0018",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Converta (ED) na base 16 para decimal.",
+      "options": [
+        "235",
+        "253",
+        "238",
+        "237"
+      ],
+      "answer": "D",
+      "difficulty": "Média",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Em base 16, cada posição vale uma potência de 16, começando por 16⁰ à direita.",
+      "explanation": "ED (base 16) = 14×16^1 + 13×16^0 = 237.",
+      "active": true
+    },
+    {
+      "id": "ca26-0019",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Converta (11111010) na base 2 para decimal.",
+      "options": [
+        "252",
+        "251",
+        "250",
+        "248"
+      ],
+      "answer": "C",
+      "difficulty": "Média",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Em base 2, cada posição vale uma potência de 2, começando por 2⁰ à direita.",
+      "explanation": "11111010 (base 2) = 1×2^7 + 1×2^6 + 1×2^5 + 1×2^4 + 1×2^3 + 0×2^2 + 1×2^1 + 0×2^0 = 250.",
+      "active": true
+    },
+    {
+      "id": "ca26-0020",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Converta (377) na base 8 para decimal.",
+      "options": [
+        "256",
+        "255",
+        "253",
+        "263"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Em base 8, cada posição vale uma potência de 8, começando por 8⁰ à direita.",
+      "explanation": "377 (base 8) = 3×8^2 + 7×8^1 + 7×8^0 = 255.",
+      "active": true
+    },
+    {
+      "id": "ca26-0021",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Qual é a representação de 18₁₀ na base 2?",
+      "options": [
+        "10011",
+        "10001",
+        "10010",
+        "10100"
+      ],
+      "answer": "C",
+      "difficulty": "Média",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Divida 18 sucessivamente por 2 e leia os restos de baixo para cima.",
+      "explanation": "18₁₀ = (10010) na base 2.",
+      "active": true
+    },
+    {
+      "id": "ca26-0022",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Qual é a representação de 25₁₀ na base 8?",
+      "options": [
+        "31",
+        "32",
+        "30",
+        "33"
+      ],
+      "answer": "A",
+      "difficulty": "Média",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Divida 25 sucessivamente por 8 e leia os restos de baixo para cima.",
+      "explanation": "25₁₀ = (31) na base 8.",
+      "active": true
+    },
+    {
+      "id": "ca26-0023",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Qual é a representação de 31₁₀ na base 16?",
+      "options": [
+        "1F",
+        "20",
+        "21",
+        "1E"
+      ],
+      "answer": "A",
+      "difficulty": "Média",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Divida 31 sucessivamente por 16 e leia os restos de baixo para cima.",
+      "explanation": "31₁₀ = (1F) na base 16.",
+      "active": true
+    },
+    {
+      "id": "ca26-0024",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Qual é a representação de 42₁₀ na base 2?",
+      "options": [
+        "101010",
+        "101011",
+        "101100",
+        "101001"
+      ],
+      "answer": "A",
+      "difficulty": "Média",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Divida 42 sucessivamente por 2 e leia os restos de baixo para cima.",
+      "explanation": "42₁₀ = (101010) na base 2.",
+      "active": true
+    },
+    {
+      "id": "ca26-0025",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Qual é a representação de 53₁₀ na base 8?",
+      "options": [
+        "64",
+        "65",
+        "66",
+        "67"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Divida 53 sucessivamente por 8 e leia os restos de baixo para cima.",
+      "explanation": "53₁₀ = (65) na base 8.",
+      "active": true
+    },
+    {
+      "id": "ca26-0026",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Qual é a representação de 64₁₀ na base 16?",
+      "options": [
+        "42",
+        "40",
+        "41",
+        "3F"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Divida 64 sucessivamente por 16 e leia os restos de baixo para cima.",
+      "explanation": "64₁₀ = (40) na base 16.",
+      "active": true
+    },
+    {
+      "id": "ca26-0027",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Qual é a representação de 79₁₀ na base 2?",
+      "options": [
+        "1001110",
+        "1010000",
+        "1010001",
+        "1001111"
+      ],
+      "answer": "D",
+      "difficulty": "Média",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Divida 79 sucessivamente por 2 e leia os restos de baixo para cima.",
+      "explanation": "79₁₀ = (1001111) na base 2.",
+      "active": true
+    },
+    {
+      "id": "ca26-0028",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Qual é a representação de 88₁₀ na base 8?",
+      "options": [
+        "127",
+        "130",
+        "131",
+        "132"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Divida 88 sucessivamente por 8 e leia os restos de baixo para cima.",
+      "explanation": "88₁₀ = (130) na base 8.",
+      "active": true
+    },
+    {
+      "id": "ca26-0029",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Qual é a representação de 101₁₀ na base 16?",
+      "options": [
+        "65",
+        "66",
+        "67",
+        "64"
+      ],
+      "answer": "A",
+      "difficulty": "Média",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Divida 101 sucessivamente por 16 e leia os restos de baixo para cima.",
+      "explanation": "101₁₀ = (65) na base 16.",
+      "active": true
+    },
+    {
+      "id": "ca26-0030",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Qual é a representação de 116₁₀ na base 2?",
+      "options": [
+        "1110100",
+        "1110101",
+        "1110011",
+        "1110110"
+      ],
+      "answer": "A",
+      "difficulty": "Média",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Divida 116 sucessivamente por 2 e leia os restos de baixo para cima.",
+      "explanation": "116₁₀ = (1110100) na base 2.",
+      "active": true
+    },
+    {
+      "id": "ca26-0031",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Qual é a representação de 127₁₀ na base 8?",
+      "options": [
+        "200",
+        "177",
+        "176",
+        "201"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Divida 127 sucessivamente por 8 e leia os restos de baixo para cima.",
+      "explanation": "127₁₀ = (177) na base 8.",
+      "active": true
+    },
+    {
+      "id": "ca26-0032",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-conversion",
+      "statement": "Qual é a representação de 144₁₀ na base 16?",
+      "options": [
+        "90",
+        "92",
+        "91",
+        "8F"
+      ],
+      "answer": "A",
+      "difficulty": "Média",
+      "tags": [
+        "bases",
+        "conversão"
+      ],
+      "hint": "Divida 144 sucessivamente por 16 e leia os restos de baixo para cima.",
+      "explanation": "144₁₀ = (90) na base 16.",
+      "active": true
+    },
+    {
+      "id": "ca26-0033",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-operation",
+      "statement": "Calcule (101)₂ + (11)₂. Qual é o resultado em binário?",
+      "options": [
+        "111",
+        "1010",
+        "1001",
+        "1000"
+      ],
+      "answer": "D",
+      "difficulty": "Média",
+      "tags": [
+        "binário",
+        "operações"
+      ],
+      "hint": "Converta os dois operandos para decimal, faça a operação e depois reconverta para binário.",
+      "explanation": "5 + 3 = 8 em decimal; 8₁₀ = 1000₂.",
+      "active": true
+    },
+    {
+      "id": "ca26-0034",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-operation",
+      "statement": "Calcule (111)₂ + (110)₂. Qual é o resultado em binário?",
+      "options": [
+        "1111",
+        "1110",
+        "1101",
+        "1100"
+      ],
+      "answer": "C",
+      "difficulty": "Média",
+      "tags": [
+        "binário",
+        "operações"
+      ],
+      "hint": "Converta os dois operandos para decimal, faça a operação e depois reconverta para binário.",
+      "explanation": "7 + 6 = 13 em decimal; 13₁₀ = 1101₂.",
+      "active": true
+    },
+    {
+      "id": "ca26-0035",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-operation",
+      "statement": "Calcule (1010)₂ + (101)₂. Qual é o resultado em binário?",
+      "options": [
+        "10001",
+        "10000",
+        "1111",
+        "1110"
+      ],
+      "answer": "C",
+      "difficulty": "Média",
+      "tags": [
+        "binário",
+        "operações"
+      ],
+      "hint": "Converta os dois operandos para decimal, faça a operação e depois reconverta para binário.",
+      "explanation": "10 + 5 = 15 em decimal; 15₁₀ = 1111₂.",
+      "active": true
+    },
+    {
+      "id": "ca26-0036",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-operation",
+      "statement": "Calcule (1100)₂ + (1001)₂. Qual é o resultado em binário?",
+      "options": [
+        "10111",
+        "10101",
+        "10110",
+        "10100"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "binário",
+        "operações"
+      ],
+      "hint": "Converta os dois operandos para decimal, faça a operação e depois reconverta para binário.",
+      "explanation": "12 + 9 = 21 em decimal; 21₁₀ = 10101₂.",
+      "active": true
+    },
+    {
+      "id": "ca26-0037",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-operation",
+      "statement": "Calcule (1111)₂ + (111)₂. Qual é o resultado em binário?",
+      "options": [
+        "10110",
+        "10101",
+        "11000",
+        "10111"
+      ],
+      "answer": "A",
+      "difficulty": "Média",
+      "tags": [
+        "binário",
+        "operações"
+      ],
+      "hint": "Converta os dois operandos para decimal, faça a operação e depois reconverta para binário.",
+      "explanation": "15 + 7 = 22 em decimal; 22₁₀ = 10110₂.",
+      "active": true
+    },
+    {
+      "id": "ca26-0038",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-operation",
+      "statement": "Calcule (10101)₂ + (1011)₂. Qual é o resultado em binário?",
+      "options": [
+        "100010",
+        "100000",
+        "11111",
+        "100001"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "binário",
+        "operações"
+      ],
+      "hint": "Converta os dois operandos para decimal, faça a operação e depois reconverta para binário.",
+      "explanation": "21 + 11 = 32 em decimal; 32₁₀ = 100000₂.",
+      "active": true
+    },
+    {
+      "id": "ca26-0039",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-operation",
+      "statement": "Calcule (1001)₂ - (11)₂. Qual é o resultado em binário?",
+      "options": [
+        "1000",
+        "111",
+        "101",
+        "110"
+      ],
+      "answer": "D",
+      "difficulty": "Média",
+      "tags": [
+        "binário",
+        "operações"
+      ],
+      "hint": "Converta os dois operandos para decimal, faça a operação e depois reconverta para binário.",
+      "explanation": "9 - 3 = 6 em decimal; 6₁₀ = 110₂.",
+      "active": true
+    },
+    {
+      "id": "ca26-0040",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-operation",
+      "statement": "Calcule (1111)₂ - (110)₂. Qual é o resultado em binário?",
+      "options": [
+        "1010",
+        "1000",
+        "1011",
+        "1001"
+      ],
+      "answer": "D",
+      "difficulty": "Média",
+      "tags": [
+        "binário",
+        "operações"
+      ],
+      "hint": "Converta os dois operandos para decimal, faça a operação e depois reconverta para binário.",
+      "explanation": "15 - 6 = 9 em decimal; 9₁₀ = 1001₂.",
+      "active": true
+    },
+    {
+      "id": "ca26-0041",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-operation",
+      "statement": "Calcule (10100)₂ - (1001)₂. Qual é o resultado em binário?",
+      "options": [
+        "1010",
+        "1101",
+        "1011",
+        "1100"
+      ],
+      "answer": "C",
+      "difficulty": "Média",
+      "tags": [
+        "binário",
+        "operações"
+      ],
+      "hint": "Converta os dois operandos para decimal, faça a operação e depois reconverta para binário.",
+      "explanation": "20 - 9 = 11 em decimal; 11₁₀ = 1011₂.",
+      "active": true
+    },
+    {
+      "id": "ca26-0042",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-operation",
+      "statement": "Calcule (11100)₂ - (1101)₂. Qual é o resultado em binário?",
+      "options": [
+        "1111",
+        "10000",
+        "1110",
+        "10001"
+      ],
+      "answer": "A",
+      "difficulty": "Média",
+      "tags": [
+        "binário",
+        "operações"
+      ],
+      "hint": "Converta os dois operandos para decimal, faça a operação e depois reconverta para binário.",
+      "explanation": "28 - 13 = 15 em decimal; 15₁₀ = 1111₂.",
+      "active": true
+    },
+    {
+      "id": "ca26-0043",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-operation",
+      "statement": "Calcule (110)₂ × (11)₂. Qual é o resultado em binário?",
+      "options": [
+        "10100",
+        "10001",
+        "10010",
+        "10011"
+      ],
+      "answer": "C",
+      "difficulty": "Média",
+      "tags": [
+        "binário",
+        "operações"
+      ],
+      "hint": "Converta os dois operandos para decimal, faça a operação e depois reconverta para binário.",
+      "explanation": "6 × 3 = 18 em decimal; 18₁₀ = 10010₂.",
+      "active": true
+    },
+    {
+      "id": "ca26-0044",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-operation",
+      "statement": "Calcule (111)₂ × (100)₂. Qual é o resultado em binário?",
+      "options": [
+        "11101",
+        "11100",
+        "11110",
+        "11011"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "binário",
+        "operações"
+      ],
+      "hint": "Converta os dois operandos para decimal, faça a operação e depois reconverta para binário.",
+      "explanation": "7 × 4 = 28 em decimal; 28₁₀ = 11100₂.",
+      "active": true
+    },
+    {
+      "id": "ca26-0045",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-operation",
+      "statement": "Calcule (1001)₂ × (101)₂. Qual é o resultado em binário?",
+      "options": [
+        "101111",
+        "101101",
+        "101100",
+        "101110"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "binário",
+        "operações"
+      ],
+      "hint": "Converta os dois operandos para decimal, faça a operação e depois reconverta para binário.",
+      "explanation": "9 × 5 = 45 em decimal; 45₁₀ = 101101₂.",
+      "active": true
+    },
+    {
+      "id": "ca26-0046",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-operation",
+      "statement": "Calcule (1011)₂ × (11)₂. Qual é o resultado em binário?",
+      "options": [
+        "100000",
+        "100010",
+        "100001",
+        "100011"
+      ],
+      "answer": "C",
+      "difficulty": "Média",
+      "tags": [
+        "binário",
+        "operações"
+      ],
+      "hint": "Converta os dois operandos para decimal, faça a operação e depois reconverta para binário.",
+      "explanation": "11 × 3 = 33 em decimal; 33₁₀ = 100001₂.",
+      "active": true
+    },
+    {
+      "id": "ca26-0047",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-operation",
+      "statement": "Calcule (1101)₂ × (10)₂. Qual é o resultado em binário?",
+      "options": [
+        "11100",
+        "11001",
+        "11010",
+        "11011"
+      ],
+      "answer": "C",
+      "difficulty": "Média",
+      "tags": [
+        "binário",
+        "operações"
+      ],
+      "hint": "Converta os dois operandos para decimal, faça a operação e depois reconverta para binário.",
+      "explanation": "13 × 2 = 26 em decimal; 26₁₀ = 11010₂.",
+      "active": true
+    },
+    {
+      "id": "ca26-0048",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-operation",
+      "statement": "Calcule (10001)₂ + (100)₂. Qual é o resultado em binário?",
+      "options": [
+        "10111",
+        "10101",
+        "10110",
+        "10100"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "binário",
+        "operações"
+      ],
+      "hint": "Converta os dois operandos para decimal, faça a operação e depois reconverta para binário.",
+      "explanation": "17 + 4 = 21 em decimal; 21₁₀ = 10101₂.",
+      "active": true
+    },
+    {
+      "id": "ca26-0049",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-operation",
+      "statement": "Calcule (11111)₂ + (10000)₂. Qual é o resultado em binário?",
+      "options": [
+        "110001",
+        "101111",
+        "101110",
+        "110000"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "binário",
+        "operações"
+      ],
+      "hint": "Converta os dois operandos para decimal, faça a operação e depois reconverta para binário.",
+      "explanation": "31 + 16 = 47 em decimal; 47₁₀ = 101111₂.",
+      "active": true
+    },
+    {
+      "id": "ca26-0050",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-operation",
+      "statement": "Calcule (101010)₂ - (1111)₂. Qual é o resultado em binário?",
+      "options": [
+        "11101",
+        "11010",
+        "11100",
+        "11011"
+      ],
+      "answer": "D",
+      "difficulty": "Média",
+      "tags": [
+        "binário",
+        "operações"
+      ],
+      "hint": "Converta os dois operandos para decimal, faça a operação e depois reconverta para binário.",
+      "explanation": "42 - 15 = 27 em decimal; 27₁₀ = 11011₂.",
+      "active": true
+    },
+    {
+      "id": "ca26-0051",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-operation",
+      "statement": "Calcule (1110)₂ × (111)₂. Qual é o resultado em binário?",
+      "options": [
+        "1100001",
+        "1100100",
+        "1100011",
+        "1100010"
+      ],
+      "answer": "D",
+      "difficulty": "Média",
+      "tags": [
+        "binário",
+        "operações"
+      ],
+      "hint": "Converta os dois operandos para decimal, faça a operação e depois reconverta para binário.",
+      "explanation": "14 × 7 = 98 em decimal; 98₁₀ = 1100010₂.",
+      "active": true
+    },
+    {
+      "id": "ca26-0052",
+      "disciplineId": "architecture",
+      "activityTypeId": "base-operation",
+      "statement": "Calcule (11001)₂ + (1100)₂. Qual é o resultado em binário?",
+      "options": [
+        "100111",
+        "100110",
+        "100100",
+        "100101"
+      ],
+      "answer": "D",
+      "difficulty": "Média",
+      "tags": [
+        "binário",
+        "operações"
+      ],
+      "hint": "Converta os dois operandos para decimal, faça a operação e depois reconverta para binário.",
+      "explanation": "25 + 12 = 37 em decimal; 37₁₀ = 100101₂.",
+      "active": true
+    },
+    {
+      "id": "ca26-0053",
+      "disciplineId": "architecture",
+      "activityTypeId": "word-decoding",
+      "statement": "Decodifique os bytes ASCII em uma palavra: 01000011 01010000 01010101",
+      "options": [],
+      "answer": "CPU",
+      "difficulty": "Fácil",
+      "tags": [
+        "ASCII",
+        "palavra"
+      ],
+      "hint": "Cada bloco de 8 bits representa uma letra. Comece convertendo o primeiro bloco (01000011) para decimal e consulte seu caractere ASCII.",
+      "explanation": "ASCII: 01000011 = 67 = C, 01010000 = 80 = P, 01010101 = 85 = U. Palavra: CPU.",
+      "active": true
+    },
+    {
+      "id": "ca26-0054",
+      "disciplineId": "architecture",
+      "activityTypeId": "word-decoding",
+      "statement": "Decodifique os bytes ASCII em uma palavra: 01010010 01000001 01001101",
+      "options": [],
+      "answer": "RAM",
+      "difficulty": "Fácil",
+      "tags": [
+        "ASCII",
+        "palavra"
+      ],
+      "hint": "Cada bloco de 8 bits representa uma letra. Comece convertendo o primeiro bloco (01010010) para decimal e consulte seu caractere ASCII.",
+      "explanation": "ASCII: 01010010 = 82 = R, 01000001 = 65 = A, 01001101 = 77 = M. Palavra: RAM.",
+      "active": true
+    },
+    {
+      "id": "ca26-0055",
+      "disciplineId": "architecture",
+      "activityTypeId": "word-decoding",
+      "statement": "Decodifique os bytes ASCII em uma palavra: 01010010 01001111 01001101",
+      "options": [],
+      "answer": "ROM",
+      "difficulty": "Fácil",
+      "tags": [
+        "ASCII",
+        "palavra"
+      ],
+      "hint": "Cada bloco de 8 bits representa uma letra. Comece convertendo o primeiro bloco (01010010) para decimal e consulte seu caractere ASCII.",
+      "explanation": "ASCII: 01010010 = 82 = R, 01001111 = 79 = O, 01001101 = 77 = M. Palavra: ROM.",
+      "active": true
+    },
+    {
+      "id": "ca26-0056",
+      "disciplineId": "architecture",
+      "activityTypeId": "word-decoding",
+      "statement": "Decodifique os bytes ASCII em uma palavra: 01010011 01010011 01000100",
+      "options": [],
+      "answer": "SSD",
+      "difficulty": "Fácil",
+      "tags": [
+        "ASCII",
+        "palavra"
+      ],
+      "hint": "Cada bloco de 8 bits representa uma letra. Comece convertendo o primeiro bloco (01010011) para decimal e consulte seu caractere ASCII.",
+      "explanation": "ASCII: 01010011 = 83 = S, 01010011 = 83 = S, 01000100 = 68 = D. Palavra: SSD.",
+      "active": true
+    },
+    {
+      "id": "ca26-0057",
+      "disciplineId": "architecture",
+      "activityTypeId": "word-decoding",
+      "statement": "Decodifique os bytes ASCII em uma palavra: 01001000 01000100",
+      "options": [],
+      "answer": "HD",
+      "difficulty": "Fácil",
+      "tags": [
+        "ASCII",
+        "palavra"
+      ],
+      "hint": "Cada bloco de 8 bits representa uma letra. Comece convertendo o primeiro bloco (01001000) para decimal e consulte seu caractere ASCII.",
+      "explanation": "ASCII: 01001000 = 72 = H, 01000100 = 68 = D. Palavra: HD.",
+      "active": true
+    },
+    {
+      "id": "ca26-0058",
+      "disciplineId": "architecture",
+      "activityTypeId": "word-decoding",
+      "statement": "Decodifique os bytes ASCII em uma palavra: 01010101 01010011 01000010",
+      "options": [],
+      "answer": "USB",
+      "difficulty": "Fácil",
+      "tags": [
+        "ASCII",
+        "palavra"
+      ],
+      "hint": "Cada bloco de 8 bits representa uma letra. Comece convertendo o primeiro bloco (01010101) para decimal e consulte seu caractere ASCII.",
+      "explanation": "ASCII: 01010101 = 85 = U, 01010011 = 83 = S, 01000010 = 66 = B. Palavra: USB.",
+      "active": true
+    },
+    {
+      "id": "ca26-0059",
+      "disciplineId": "architecture",
+      "activityTypeId": "word-decoding",
+      "statement": "Decodifique os bytes ASCII em uma palavra: 01000010 01001001 01001111 01010011",
+      "options": [],
+      "answer": "BIOS",
+      "difficulty": "Média",
+      "tags": [
+        "ASCII",
+        "palavra"
+      ],
+      "hint": "Cada bloco de 8 bits representa uma letra. Comece convertendo o primeiro bloco (01000010) para decimal e consulte seu caractere ASCII.",
+      "explanation": "ASCII: 01000010 = 66 = B, 01001001 = 73 = I, 01001111 = 79 = O, 01010011 = 83 = S. Palavra: BIOS.",
+      "active": true
+    },
+    {
+      "id": "ca26-0060",
+      "disciplineId": "architecture",
+      "activityTypeId": "word-decoding",
+      "statement": "Decodifique os bytes ASCII em uma palavra: 01000011 01000001 01000011 01001000 01000101",
+      "options": [],
+      "answer": "CACHE",
+      "difficulty": "Média",
+      "tags": [
+        "ASCII",
+        "palavra"
+      ],
+      "hint": "Cada bloco de 8 bits representa uma letra. Comece convertendo o primeiro bloco (01000011) para decimal e consulte seu caractere ASCII.",
+      "explanation": "ASCII: 01000011 = 67 = C, 01000001 = 65 = A, 01000011 = 67 = C, 01001000 = 72 = H, 01000101 = 69 = E. Palavra: CACHE.",
+      "active": true
+    },
+    {
+      "id": "ca26-0061",
+      "disciplineId": "architecture",
+      "activityTypeId": "word-decoding",
+      "statement": "Decodifique os bytes ASCII em uma palavra: 01000111 01010000 01010101",
+      "options": [],
+      "answer": "GPU",
+      "difficulty": "Fácil",
+      "tags": [
+        "ASCII",
+        "palavra"
+      ],
+      "hint": "Cada bloco de 8 bits representa uma letra. Comece convertendo o primeiro bloco (01000111) para decimal e consulte seu caractere ASCII.",
+      "explanation": "ASCII: 01000111 = 71 = G, 01010000 = 80 = P, 01010101 = 85 = U. Palavra: GPU.",
+      "active": true
+    },
+    {
+      "id": "ca26-0062",
+      "disciplineId": "architecture",
+      "activityTypeId": "word-decoding",
+      "statement": "Decodifique os bytes ASCII em uma palavra: 01000010 01011001 01010100 01000101",
+      "options": [],
+      "answer": "BYTE",
+      "difficulty": "Média",
+      "tags": [
+        "ASCII",
+        "palavra"
+      ],
+      "hint": "Cada bloco de 8 bits representa uma letra. Comece convertendo o primeiro bloco (01000010) para decimal e consulte seu caractere ASCII.",
+      "explanation": "ASCII: 01000010 = 66 = B, 01011001 = 89 = Y, 01010100 = 84 = T, 01000101 = 69 = E. Palavra: BYTE.",
+      "active": true
+    },
+    {
+      "id": "ca26-0063",
+      "disciplineId": "architecture",
+      "activityTypeId": "word-decoding",
+      "statement": "Decodifique os bytes ASCII em uma palavra: 01000010 01001001 01010100",
+      "options": [],
+      "answer": "BIT",
+      "difficulty": "Fácil",
+      "tags": [
+        "ASCII",
+        "palavra"
+      ],
+      "hint": "Cada bloco de 8 bits representa uma letra. Comece convertendo o primeiro bloco (01000010) para decimal e consulte seu caractere ASCII.",
+      "explanation": "ASCII: 01000010 = 66 = B, 01001001 = 73 = I, 01010100 = 84 = T. Palavra: BIT.",
+      "active": true
+    },
+    {
+      "id": "ca26-0064",
+      "disciplineId": "architecture",
+      "activityTypeId": "word-decoding",
+      "statement": "Decodifique os bytes ASCII em uma palavra: 01000100 01000001 01000100 01001111",
+      "options": [],
+      "answer": "DADO",
+      "difficulty": "Média",
+      "tags": [
+        "ASCII",
+        "palavra"
+      ],
+      "hint": "Cada bloco de 8 bits representa uma letra. Comece convertendo o primeiro bloco (01000100) para decimal e consulte seu caractere ASCII.",
+      "explanation": "ASCII: 01000100 = 68 = D, 01000001 = 65 = A, 01000100 = 68 = D, 01001111 = 79 = O. Palavra: DADO.",
+      "active": true
+    },
+    {
+      "id": "ca26-0065",
+      "disciplineId": "architecture",
+      "activityTypeId": "word-decoding",
+      "statement": "Decodifique os bytes ASCII em uma palavra: 01010010 01000101 01000100 01000101",
+      "options": [],
+      "answer": "REDE",
+      "difficulty": "Média",
+      "tags": [
+        "ASCII",
+        "palavra"
+      ],
+      "hint": "Cada bloco de 8 bits representa uma letra. Comece convertendo o primeiro bloco (01010010) para decimal e consulte seu caractere ASCII.",
+      "explanation": "ASCII: 01010010 = 82 = R, 01000101 = 69 = E, 01000100 = 68 = D, 01000101 = 69 = E. Palavra: REDE.",
+      "active": true
+    },
+    {
+      "id": "ca26-0066",
+      "disciplineId": "architecture",
+      "activityTypeId": "word-decoding",
+      "statement": "Decodifique os bytes ASCII em uma palavra: 01001100 01001111 01000111 01001001 01000011 01000001",
+      "options": [],
+      "answer": "LOGICA",
+      "difficulty": "Média",
+      "tags": [
+        "ASCII",
+        "palavra"
+      ],
+      "hint": "Cada bloco de 8 bits representa uma letra. Comece convertendo o primeiro bloco (01001100) para decimal e consulte seu caractere ASCII.",
+      "explanation": "ASCII: 01001100 = 76 = L, 01001111 = 79 = O, 01000111 = 71 = G, 01001001 = 73 = I, 01000011 = 67 = C, 01000001 = 65 = A. Palavra: LOGICA.",
+      "active": true
+    },
+    {
+      "id": "ca26-0067",
+      "disciplineId": "architecture",
+      "activityTypeId": "word-decoding",
+      "statement": "Decodifique os bytes ASCII em uma palavra: 01000011 01001111 01000100 01001001 01000111 01001111",
+      "options": [],
+      "answer": "CODIGO",
+      "difficulty": "Média",
+      "tags": [
+        "ASCII",
+        "palavra"
+      ],
+      "hint": "Cada bloco de 8 bits representa uma letra. Comece convertendo o primeiro bloco (01000011) para decimal e consulte seu caractere ASCII.",
+      "explanation": "ASCII: 01000011 = 67 = C, 01001111 = 79 = O, 01000100 = 68 = D, 01001001 = 73 = I, 01000111 = 71 = G, 01001111 = 79 = O. Palavra: CODIGO.",
+      "active": true
+    },
+    {
+      "id": "ca26-0068",
+      "disciplineId": "architecture",
+      "activityTypeId": "word-decoding",
+      "statement": "Decodifique os bytes ASCII em uma palavra: 01000001 01001100 01010101 01001110 01001111",
+      "options": [],
+      "answer": "ALUNO",
+      "difficulty": "Média",
+      "tags": [
+        "ASCII",
+        "palavra"
+      ],
+      "hint": "Cada bloco de 8 bits representa uma letra. Comece convertendo o primeiro bloco (01000001) para decimal e consulte seu caractere ASCII.",
+      "explanation": "ASCII: 01000001 = 65 = A, 01001100 = 76 = L, 01010101 = 85 = U, 01001110 = 78 = N, 01001111 = 79 = O. Palavra: ALUNO.",
+      "active": true
+    },
+    {
+      "id": "ca26-0069",
+      "disciplineId": "architecture",
+      "activityTypeId": "phrase-decoding",
+      "statement": "Decodifique a frase ASCII (8 bits por caractere): 01001111 01001001 00100000 01010100 01010101 01010010 01001101 01000001",
+      "options": [],
+      "answer": "OI TURMA",
+      "difficulty": "Média",
+      "tags": [
+        "ASCII",
+        "frases"
+      ],
+      "hint": "Divida em bytes. O espaço entre palavras é 00100000 (decimal 32). Comece pelos primeiros dois bytes e avance em equipe.",
+      "explanation": "Cada byte corresponde a um caractere ASCII; a sequência forma: OI TURMA.",
+      "active": true
+    },
+    {
+      "id": "ca26-0070",
+      "disciplineId": "architecture",
+      "activityTypeId": "phrase-decoding",
+      "statement": "Decodifique a frase ASCII (8 bits por caractere): 01010110 01000001 01001101 01001111 01010011 00100000 01001010 01001111 01000111 01000001 01010010",
+      "options": [],
+      "answer": "VAMOS JOGAR",
+      "difficulty": "Média",
+      "tags": [
+        "ASCII",
+        "frases"
+      ],
+      "hint": "Divida em bytes. O espaço entre palavras é 00100000 (decimal 32). Comece pelos primeiros dois bytes e avance em equipe.",
+      "explanation": "Cada byte corresponde a um caractere ASCII; a sequência forma: VAMOS JOGAR.",
+      "active": true
+    },
+    {
+      "id": "ca26-0071",
+      "disciplineId": "architecture",
+      "activityTypeId": "phrase-decoding",
+      "statement": "Decodifique a frase ASCII (8 bits por caractere): 01000010 01001111 01001101 00100000 01001010 01001111 01000111 01001111",
+      "options": [],
+      "answer": "BOM JOGO",
+      "difficulty": "Média",
+      "tags": [
+        "ASCII",
+        "frases"
+      ],
+      "hint": "Divida em bytes. O espaço entre palavras é 00100000 (decimal 32). Comece pelos primeiros dois bytes e avance em equipe.",
+      "explanation": "Cada byte corresponde a um caractere ASCII; a sequência forma: BOM JOGO.",
+      "active": true
+    },
+    {
+      "id": "ca26-0072",
+      "disciplineId": "architecture",
+      "activityTypeId": "phrase-decoding",
+      "statement": "Decodifique a frase ASCII (8 bits por caractere): 01000101 01010001 01010101 01001001 01010000 01000101 00100000 01010101 01001110 01001001 01000100 01000001",
+      "options": [],
+      "answer": "EQUIPE UNIDA",
+      "difficulty": "Média",
+      "tags": [
+        "ASCII",
+        "frases"
+      ],
+      "hint": "Divida em bytes. O espaço entre palavras é 00100000 (decimal 32). Comece pelos primeiros dois bytes e avance em equipe.",
+      "explanation": "Cada byte corresponde a um caractere ASCII; a sequência forma: EQUIPE UNIDA.",
+      "active": true
+    },
+    {
+      "id": "ca26-0073",
+      "disciplineId": "architecture",
+      "activityTypeId": "phrase-decoding",
+      "statement": "Decodifique a frase ASCII (8 bits por caractere): 01001101 01001001 01010011 01010011 11000011 01001111 00100000 01000100 01000001 01000100 01000001",
+      "options": [],
+      "answer": "MISSÃO DADA",
+      "difficulty": "Média",
+      "tags": [
+        "ASCII",
+        "frases"
+      ],
+      "hint": "Divida em bytes. O espaço entre palavras é 00100000 (decimal 32). Comece pelos primeiros dois bytes e avance em equipe.",
+      "explanation": "Cada byte corresponde a um caractere ASCII; a sequência forma: MISSÃO DADA.",
+      "active": true
+    },
+    {
+      "id": "ca26-0074",
+      "disciplineId": "architecture",
+      "activityTypeId": "phrase-decoding",
+      "statement": "Decodifique a frase ASCII (8 bits por caractere): 01000001 01010010 01000101 01001110 01000001 00100000 01000001 01000100 01010011",
+      "options": [],
+      "answer": "ARENA ADS",
+      "difficulty": "Média",
+      "tags": [
+        "ASCII",
+        "frases"
+      ],
+      "hint": "Divida em bytes. O espaço entre palavras é 00100000 (decimal 32). Comece pelos primeiros dois bytes e avance em equipe.",
+      "explanation": "Cada byte corresponde a um caractere ASCII; a sequência forma: ARENA ADS.",
+      "active": true
+    },
+    {
+      "id": "ca26-0075",
+      "disciplineId": "architecture",
+      "activityTypeId": "phrase-decoding",
+      "statement": "Decodifique a frase ASCII (8 bits por caractere): 01010011 01001111 01001101 01001111 01010011 00100000 01000001 01000100 01010011",
+      "options": [],
+      "answer": "SOMOS ADS",
+      "difficulty": "Média",
+      "tags": [
+        "ASCII",
+        "frases"
+      ],
+      "hint": "Divida em bytes. O espaço entre palavras é 00100000 (decimal 32). Comece pelos primeiros dois bytes e avance em equipe.",
+      "explanation": "Cada byte corresponde a um caractere ASCII; a sequência forma: SOMOS ADS.",
+      "active": true
+    },
+    {
+      "id": "ca26-0076",
+      "disciplineId": "architecture",
+      "activityTypeId": "phrase-decoding",
+      "statement": "Decodifique a frase ASCII (8 bits por caractere): 01010110 01001001 01010110 01000001 00100000 01000001 00100000 01001100 01001111 01000111 01001001 01000011 01000001",
+      "options": [],
+      "answer": "VIVA A LOGICA",
+      "difficulty": "Difícil",
+      "tags": [
+        "ASCII",
+        "frases"
+      ],
+      "hint": "Divida em bytes. O espaço entre palavras é 00100000 (decimal 32). Comece pelos primeiros dois bytes e avance em equipe.",
+      "explanation": "Cada byte corresponde a um caractere ASCII; a sequência forma: VIVA A LOGICA.",
+      "active": true
+    },
+    {
+      "id": "ca26-0077",
+      "disciplineId": "architecture",
+      "activityTypeId": "phrase-decoding",
+      "statement": "Decodifique a frase ASCII (8 bits por caractere): 01000100 01000101 01010011 01000001 01000110 01001001 01001111 00100000 01000110 01001001 01001110 01000001 01001100",
+      "options": [],
+      "answer": "DESAFIO FINAL",
+      "difficulty": "Difícil",
+      "tags": [
+        "ASCII",
+        "frases"
+      ],
+      "hint": "Divida em bytes. O espaço entre palavras é 00100000 (decimal 32). Comece pelos primeiros dois bytes e avance em equipe.",
+      "explanation": "Cada byte corresponde a um caractere ASCII; a sequência forma: DESAFIO FINAL.",
+      "active": true
+    },
+    {
+      "id": "ca26-0078",
+      "disciplineId": "architecture",
+      "activityTypeId": "phrase-decoding",
+      "statement": "Decodifique a frase ASCII (8 bits por caractere): 01010000 01000101 01001110 01010011 01000101 00100000 01000101 01001101 00100000 01000101 01010001 01010101 01001001 01010000 01000101",
+      "options": [],
+      "answer": "PENSE EM EQUIPE",
+      "difficulty": "Difícil",
+      "tags": [
+        "ASCII",
+        "frases"
+      ],
+      "hint": "Divida em bytes. O espaço entre palavras é 00100000 (decimal 32). Comece pelos primeiros dois bytes e avance em equipe.",
+      "explanation": "Cada byte corresponde a um caractere ASCII; a sequência forma: PENSE EM EQUIPE.",
+      "active": true
+    },
+    {
+      "id": "ca26-0079",
+      "disciplineId": "architecture",
+      "activityTypeId": "special-challenge",
+      "statement": "Qual componente executa instruções e operações aritméticas?",
+      "options": [
+        "CPU",
+        "SSD",
+        "Fonte",
+        "Monitor"
+      ],
+      "answer": "A",
+      "difficulty": "Média",
+      "tags": [
+        "hardware",
+        "desafio"
+      ],
+      "hint": "Pense no processador, responsável por buscar, decodificar e executar instruções.",
+      "explanation": "A CPU executa instruções e coordena operações.",
+      "active": true
+    },
+    {
+      "id": "ca26-0080",
+      "disciplineId": "architecture",
+      "activityTypeId": "special-challenge",
+      "statement": "Qual memória é volátil e armazena dados em uso?",
+      "options": [
+        "SSD",
+        "RAM",
+        "ROM",
+        "HD"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "hardware",
+        "desafio"
+      ],
+      "hint": "Volátil significa perder o conteúdo ao desligar o equipamento.",
+      "explanation": "A RAM armazena temporariamente dados e programas em execução.",
+      "active": true
+    },
+    {
+      "id": "ca26-0081",
+      "disciplineId": "architecture",
+      "activityTypeId": "special-challenge",
+      "statement": "Qual sistema numérico utiliza os dígitos de 0 a 7?",
+      "options": [
+        "Decimal",
+        "Octal",
+        "Binário",
+        "Hexadecimal"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "hardware",
+        "desafio"
+      ],
+      "hint": "O nome da base indica a quantidade de símbolos disponíveis.",
+      "explanation": "A base 8 utiliza 0,1,2,3,4,5,6,7.",
+      "active": true
+    },
+    {
+      "id": "ca26-0082",
+      "disciplineId": "architecture",
+      "activityTypeId": "special-challenge",
+      "statement": "Quantos bits existem em um byte?",
+      "options": [
+        "32",
+        "8",
+        "16",
+        "4"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "hardware",
+        "desafio"
+      ],
+      "hint": "Um byte é uma unidade formada por oito posições binárias.",
+      "explanation": "1 byte = 8 bits.",
+      "active": true
+    },
+    {
+      "id": "ca26-0083",
+      "disciplineId": "architecture",
+      "activityTypeId": "special-challenge",
+      "statement": "Qual porta lógica só produz 1 quando ambas as entradas são 1?",
+      "options": [
+        "AND",
+        "OR",
+        "XOR",
+        "NOT"
+      ],
+      "answer": "A",
+      "difficulty": "Média",
+      "tags": [
+        "hardware",
+        "desafio"
+      ],
+      "hint": "Ela representa a conjunção lógica: p E q.",
+      "explanation": "AND retorna 1 somente para 1 e 1.",
+      "active": true
+    },
+    {
+      "id": "ca26-0084",
+      "disciplineId": "architecture",
+      "activityTypeId": "special-challenge",
+      "statement": "Qual porta lógica retorna 1 quando as entradas são diferentes?",
+      "options": [
+        "AND",
+        "XOR",
+        "OR",
+        "XNOR"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "hardware",
+        "desafio"
+      ],
+      "hint": "Pense no OU exclusivo, que não aceita duas entradas iguais.",
+      "explanation": "XOR vale 1 em 01 e 10.",
+      "active": true
+    },
+    {
+      "id": "ca26-0085",
+      "disciplineId": "architecture",
+      "activityTypeId": "special-challenge",
+      "statement": "Qual dispositivo costuma armazenar dados sem perder conteúdo ao desligar?",
+      "options": [
+        "Registrador",
+        "RAM",
+        "Cache L1",
+        "SSD"
+      ],
+      "answer": "D",
+      "difficulty": "Média",
+      "tags": [
+        "hardware",
+        "desafio"
+      ],
+      "hint": "Procure uma memória não volátil de armazenamento permanente.",
+      "explanation": "SSD usa memória flash não volátil.",
+      "active": true
+    },
+    {
+      "id": "ca26-0086",
+      "disciplineId": "architecture",
+      "activityTypeId": "special-challenge",
+      "statement": "Em hexadecimal, qual símbolo representa o valor decimal 15?",
+      "options": [
+        "A",
+        "E",
+        "10",
+        "F"
+      ],
+      "answer": "D",
+      "difficulty": "Média",
+      "tags": [
+        "hardware",
+        "desafio"
+      ],
+      "hint": "Depois do 9, o hexadecimal usa letras A, B, C, D, E e F.",
+      "explanation": "F₁₆ = 15₁₀.",
+      "active": true
+    },
+    {
+      "id": "ca26-0087",
+      "disciplineId": "architecture",
+      "activityTypeId": "special-challenge",
+      "statement": "Qual barramento transporta os valores que estão sendo transferidos?",
+      "options": [
+        "Barramento de endereços",
+        "Barramento de controle",
+        "Clock",
+        "Barramento de dados"
+      ],
+      "answer": "D",
+      "difficulty": "Média",
+      "tags": [
+        "hardware",
+        "desafio"
+      ],
+      "hint": "Diferencie o endereço do destino e o conteúdo transportado.",
+      "explanation": "O barramento de dados carrega os valores transferidos.",
+      "active": true
+    },
+    {
+      "id": "ca26-0088",
+      "disciplineId": "architecture",
+      "activityTypeId": "special-challenge",
+      "statement": "Qual unidade de CPU guarda valores temporários de acesso imediato?",
+      "options": [
+        "HD",
+        "Registrador",
+        "SSD",
+        "Pendrive"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "hardware",
+        "desafio"
+      ],
+      "hint": "É uma memória muito pequena localizada dentro do processador.",
+      "explanation": "Registradores são armazenamento interno rápido da CPU.",
+      "active": true
+    },
+    {
+      "id": "ca26-0089",
+      "disciplineId": "architecture",
+      "activityTypeId": "special-challenge",
+      "statement": "Qual é o valor decimal de (11111111)₂?",
+      "options": [
+        "127",
+        "255",
+        "256",
+        "254"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "hardware",
+        "desafio"
+      ],
+      "hint": "Some 128+64+32+16+8+4+2+1.",
+      "explanation": "Todos os 8 bits ligados somam 255.",
+      "active": true
+    },
+    {
+      "id": "ca26-0090",
+      "disciplineId": "architecture",
+      "activityTypeId": "special-challenge",
+      "statement": "O que representa o bit menos significativo?",
+      "options": [
+        "O maior byte",
+        "A posição mais à direita",
+        "O sinal de igualdade",
+        "A posição mais à esquerda"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "hardware",
+        "desafio"
+      ],
+      "hint": "Em um inteiro binário sem sinal, é a posição de peso 2⁰.",
+      "explanation": "O bit menos significativo é o de menor peso, à direita.",
+      "active": true
+    },
+    {
+      "id": "ca26-0091",
+      "disciplineId": "mathematics",
+      "activityTypeId": "fractions",
+      "statement": "Calcule 1/2 + 1/4 e simplifique o resultado.",
+      "options": [
+        "3/5",
+        "1",
+        "3/4",
+        "1/3"
+      ],
+      "answer": "C",
+      "difficulty": "Média",
+      "tags": [
+        "frações"
+      ],
+      "hint": "Para soma/subtração, use denominador comum; para multiplicação, multiplique numeradores e denominadores; para divisão, multiplique pela fração inversa.",
+      "explanation": "1/2 + 1/4 = 3/4 (forma irredutível).",
+      "active": true
+    },
+    {
+      "id": "ca26-0092",
+      "disciplineId": "mathematics",
+      "activityTypeId": "fractions",
+      "statement": "Calcule 2/3 + 1/6 e simplifique o resultado.",
+      "options": [
+        "5/6",
+        "1",
+        "1/3",
+        "5/7"
+      ],
+      "answer": "A",
+      "difficulty": "Média",
+      "tags": [
+        "frações"
+      ],
+      "hint": "Para soma/subtração, use denominador comum; para multiplicação, multiplique numeradores e denominadores; para divisão, multiplique pela fração inversa.",
+      "explanation": "2/3 + 1/6 = 5/6 (forma irredutível).",
+      "active": true
+    },
+    {
+      "id": "ca26-0093",
+      "disciplineId": "mathematics",
+      "activityTypeId": "fractions",
+      "statement": "Calcule 3/4 - 1/8 e simplifique o resultado.",
+      "options": [
+        "3/4",
+        "1/3",
+        "5/8",
+        "5/9"
+      ],
+      "answer": "C",
+      "difficulty": "Média",
+      "tags": [
+        "frações"
+      ],
+      "hint": "Para soma/subtração, use denominador comum; para multiplicação, multiplique numeradores e denominadores; para divisão, multiplique pela fração inversa.",
+      "explanation": "3/4 - 1/8 = 5/8 (forma irredutível).",
+      "active": true
+    },
+    {
+      "id": "ca26-0094",
+      "disciplineId": "mathematics",
+      "activityTypeId": "fractions",
+      "statement": "Calcule 5/6 - 1/3 e simplifique o resultado.",
+      "options": [
+        "1/3",
+        "2/3",
+        "1/2",
+        "1"
+      ],
+      "answer": "C",
+      "difficulty": "Média",
+      "tags": [
+        "frações"
+      ],
+      "hint": "Para soma/subtração, use denominador comum; para multiplicação, multiplique numeradores e denominadores; para divisão, multiplique pela fração inversa.",
+      "explanation": "5/6 - 1/3 = 1/2 (forma irredutível).",
+      "active": true
+    },
+    {
+      "id": "ca26-0095",
+      "disciplineId": "mathematics",
+      "activityTypeId": "fractions",
+      "statement": "Calcule 2/5 + 3/10 e simplifique o resultado.",
+      "options": [
+        "7/10",
+        "4/5",
+        "7/11",
+        "1/3"
+      ],
+      "answer": "A",
+      "difficulty": "Média",
+      "tags": [
+        "frações"
+      ],
+      "hint": "Para soma/subtração, use denominador comum; para multiplicação, multiplique numeradores e denominadores; para divisão, multiplique pela fração inversa.",
+      "explanation": "2/5 + 3/10 = 7/10 (forma irredutível).",
+      "active": true
+    },
+    {
+      "id": "ca26-0096",
+      "disciplineId": "mathematics",
+      "activityTypeId": "fractions",
+      "statement": "Calcule 7/8 - 1/4 e simplifique o resultado.",
+      "options": [
+        "5/8",
+        "3/4",
+        "2/3",
+        "5/9"
+      ],
+      "answer": "A",
+      "difficulty": "Média",
+      "tags": [
+        "frações"
+      ],
+      "hint": "Para soma/subtração, use denominador comum; para multiplicação, multiplique numeradores e denominadores; para divisão, multiplique pela fração inversa.",
+      "explanation": "7/8 - 1/4 = 5/8 (forma irredutível).",
+      "active": true
+    },
+    {
+      "id": "ca26-0097",
+      "disciplineId": "mathematics",
+      "activityTypeId": "fractions",
+      "statement": "Calcule 3/5 × 2/3 e simplifique o resultado.",
+      "options": [
+        "3/5",
+        "5/8",
+        "2/5",
+        "1/3"
+      ],
+      "answer": "C",
+      "difficulty": "Média",
+      "tags": [
+        "frações"
+      ],
+      "hint": "Para soma/subtração, use denominador comum; para multiplicação, multiplique numeradores e denominadores; para divisão, multiplique pela fração inversa.",
+      "explanation": "3/5 × 2/3 = 2/5 (forma irredutível).",
+      "active": true
+    },
+    {
+      "id": "ca26-0098",
+      "disciplineId": "mathematics",
+      "activityTypeId": "fractions",
+      "statement": "Calcule 4/7 × 7/8 e simplifique o resultado.",
+      "options": [
+        "1",
+        "1/2",
+        "11/15",
+        "1/3"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "frações"
+      ],
+      "hint": "Para soma/subtração, use denominador comum; para multiplicação, multiplique numeradores e denominadores; para divisão, multiplique pela fração inversa.",
+      "explanation": "4/7 × 7/8 = 1/2 (forma irredutível).",
+      "active": true
+    },
+    {
+      "id": "ca26-0099",
+      "disciplineId": "mathematics",
+      "activityTypeId": "fractions",
+      "statement": "Calcule 1/2 ÷ 3/4 e simplifique o resultado.",
+      "options": [
+        "1",
+        "5/4",
+        "2/3",
+        "1/2"
+      ],
+      "answer": "C",
+      "difficulty": "Média",
+      "tags": [
+        "frações"
+      ],
+      "hint": "Para soma/subtração, use denominador comum; para multiplicação, multiplique numeradores e denominadores; para divisão, multiplique pela fração inversa.",
+      "explanation": "1/2 ÷ 3/4 = 2/3 (forma irredutível).",
+      "active": true
+    },
+    {
+      "id": "ca26-0100",
+      "disciplineId": "mathematics",
+      "activityTypeId": "fractions",
+      "statement": "Calcule 2/3 ÷ 4/5 e simplifique o resultado.",
+      "options": [
+        "5/7",
+        "1",
+        "5/6",
+        "3/4"
+      ],
+      "answer": "C",
+      "difficulty": "Média",
+      "tags": [
+        "frações"
+      ],
+      "hint": "Para soma/subtração, use denominador comum; para multiplicação, multiplique numeradores e denominadores; para divisão, multiplique pela fração inversa.",
+      "explanation": "2/3 ÷ 4/5 = 5/6 (forma irredutível).",
+      "active": true
+    },
+    {
+      "id": "ca26-0101",
+      "disciplineId": "mathematics",
+      "activityTypeId": "fractions",
+      "statement": "Calcule 5/12 + 1/6 e simplifique o resultado.",
+      "options": [
+        "7/12",
+        "1/3",
+        "2/3",
+        "7/13"
+      ],
+      "answer": "A",
+      "difficulty": "Média",
+      "tags": [
+        "frações"
+      ],
+      "hint": "Para soma/subtração, use denominador comum; para multiplicação, multiplique numeradores e denominadores; para divisão, multiplique pela fração inversa.",
+      "explanation": "5/12 + 1/6 = 7/12 (forma irredutível).",
+      "active": true
+    },
+    {
+      "id": "ca26-0102",
+      "disciplineId": "mathematics",
+      "activityTypeId": "fractions",
+      "statement": "Calcule 7/10 - 1/5 e simplifique o resultado.",
+      "options": [
+        "8/15",
+        "1/2",
+        "1",
+        "1/3"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "frações"
+      ],
+      "hint": "Para soma/subtração, use denominador comum; para multiplicação, multiplique numeradores e denominadores; para divisão, multiplique pela fração inversa.",
+      "explanation": "7/10 - 1/5 = 1/2 (forma irredutível).",
+      "active": true
+    },
+    {
+      "id": "ca26-0103",
+      "disciplineId": "mathematics",
+      "activityTypeId": "expressions",
+      "statement": "Calcule a expressão: 8 + 3 × 4",
+      "options": [],
+      "answer": "20",
+      "difficulty": "Média",
+      "tags": [
+        "expressões",
+        "precedência"
+      ],
+      "hint": "Multiplique 3×4 antes de somar 8.",
+      "explanation": "8 + 3 × 4 = 20.",
+      "active": true
+    },
+    {
+      "id": "ca26-0104",
+      "disciplineId": "mathematics",
+      "activityTypeId": "expressions",
+      "statement": "Calcule a expressão: (8 + 3) × 4",
+      "options": [],
+      "answer": "44",
+      "difficulty": "Média",
+      "tags": [
+        "expressões",
+        "precedência"
+      ],
+      "hint": "Resolva os parênteses antes da multiplicação.",
+      "explanation": "(8 + 3) × 4 = 44.",
+      "active": true
+    },
+    {
+      "id": "ca26-0105",
+      "disciplineId": "mathematics",
+      "activityTypeId": "expressions",
+      "statement": "Calcule a expressão: 30 - 12 ÷ 3",
+      "options": [],
+      "answer": "26",
+      "difficulty": "Média",
+      "tags": [
+        "expressões",
+        "precedência"
+      ],
+      "hint": "Divida 12 por 3 antes de subtrair.",
+      "explanation": "30 - 12 ÷ 3 = 26.",
+      "active": true
+    },
+    {
+      "id": "ca26-0106",
+      "disciplineId": "mathematics",
+      "activityTypeId": "expressions",
+      "statement": "Calcule a expressão: 6 × (7 - 2)",
+      "options": [],
+      "answer": "30",
+      "difficulty": "Média",
+      "tags": [
+        "expressões",
+        "precedência"
+      ],
+      "hint": "Resolva 7−2 dentro dos parênteses.",
+      "explanation": "6 × (7 - 2) = 30.",
+      "active": true
+    },
+    {
+      "id": "ca26-0107",
+      "disciplineId": "mathematics",
+      "activityTypeId": "expressions",
+      "statement": "Calcule a expressão: 2³ + 5 × 2",
+      "options": [],
+      "answer": "18",
+      "difficulty": "Média",
+      "tags": [
+        "expressões",
+        "precedência"
+      ],
+      "hint": "Primeiro potência, depois multiplicação, por último soma.",
+      "explanation": "2³ + 5 × 2 = 18.",
+      "active": true
+    },
+    {
+      "id": "ca26-0108",
+      "disciplineId": "mathematics",
+      "activityTypeId": "expressions",
+      "statement": "Calcule a expressão: 48 ÷ 6 + 3²",
+      "options": [],
+      "answer": "17",
+      "difficulty": "Média",
+      "tags": [
+        "expressões",
+        "precedência"
+      ],
+      "hint": "Divisão e potência vêm antes da adição.",
+      "explanation": "48 ÷ 6 + 3² = 17.",
+      "active": true
+    },
+    {
+      "id": "ca26-0109",
+      "disciplineId": "mathematics",
+      "activityTypeId": "expressions",
+      "statement": "Calcule a expressão: 5 × 4 - 3 × 2",
+      "options": [],
+      "answer": "14",
+      "difficulty": "Média",
+      "tags": [
+        "expressões",
+        "precedência"
+      ],
+      "hint": "Faça as duas multiplicações antes de subtrair.",
+      "explanation": "5 × 4 - 3 × 2 = 14.",
+      "active": true
+    },
+    {
+      "id": "ca26-0110",
+      "disciplineId": "mathematics",
+      "activityTypeId": "expressions",
+      "statement": "Calcule a expressão: (18 - 6) ÷ 4",
+      "options": [],
+      "answer": "3",
+      "difficulty": "Média",
+      "tags": [
+        "expressões",
+        "precedência"
+      ],
+      "hint": "Resolva 18−6 e divida o resultado por 4.",
+      "explanation": "(18 - 6) ÷ 4 = 3.",
+      "active": true
+    },
+    {
+      "id": "ca26-0111",
+      "disciplineId": "mathematics",
+      "activityTypeId": "expressions",
+      "statement": "Calcule a expressão: 7 + 2 × (9 - 4)",
+      "options": [],
+      "answer": "17",
+      "difficulty": "Média",
+      "tags": [
+        "expressões",
+        "precedência"
+      ],
+      "hint": "Parênteses, depois multiplicação e por fim soma.",
+      "explanation": "7 + 2 × (9 - 4) = 17.",
+      "active": true
+    },
+    {
+      "id": "ca26-0112",
+      "disciplineId": "mathematics",
+      "activityTypeId": "expressions",
+      "statement": "Calcule a expressão: 4² - 3 × 5",
+      "options": [],
+      "answer": "1",
+      "difficulty": "Média",
+      "tags": [
+        "expressões",
+        "precedência"
+      ],
+      "hint": "Calcule 4² e 3×5 antes da subtração.",
+      "explanation": "4² - 3 × 5 = 1.",
+      "active": true
+    },
+    {
+      "id": "ca26-0113",
+      "disciplineId": "mathematics",
+      "activityTypeId": "expressions",
+      "statement": "Calcule a expressão: 100 ÷ (5 × 4)",
+      "options": [],
+      "answer": "5",
+      "difficulty": "Média",
+      "tags": [
+        "expressões",
+        "precedência"
+      ],
+      "hint": "Resolva o produto entre parênteses antes da divisão.",
+      "explanation": "100 ÷ (5 × 4) = 5.",
+      "active": true
+    },
+    {
+      "id": "ca26-0114",
+      "disciplineId": "mathematics",
+      "activityTypeId": "expressions",
+      "statement": "Calcule a expressão: 3 × (2 + 5) - 4",
+      "options": [],
+      "answer": "17",
+      "difficulty": "Média",
+      "tags": [
+        "expressões",
+        "precedência"
+      ],
+      "hint": "Resolva os parênteses, multiplique por 3 e subtraia 4.",
+      "explanation": "3 × (2 + 5) - 4 = 17.",
+      "active": true
+    },
+    {
+      "id": "ca26-0115",
+      "disciplineId": "mathematics",
+      "activityTypeId": "precedence",
+      "statement": "Qual é o resultado correto de 8 + 3 × 4?",
+      "options": [
+        "23",
+        "18",
+        "21",
+        "20"
+      ],
+      "answer": "D",
+      "difficulty": "Média",
+      "tags": [
+        "precedência"
+      ],
+      "hint": "Multiplique 3×4 antes de somar 8.",
+      "explanation": "Respeitando a ordem de operações, 8 + 3 × 4 = 20.",
+      "active": true
+    },
+    {
+      "id": "ca26-0116",
+      "disciplineId": "mathematics",
+      "activityTypeId": "precedence",
+      "statement": "Qual é o resultado correto de (8 + 3) × 4?",
+      "options": [
+        "45",
+        "44",
+        "42",
+        "47"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "precedência"
+      ],
+      "hint": "Resolva os parênteses antes da multiplicação.",
+      "explanation": "Respeitando a ordem de operações, (8 + 3) × 4 = 44.",
+      "active": true
+    },
+    {
+      "id": "ca26-0117",
+      "disciplineId": "mathematics",
+      "activityTypeId": "precedence",
+      "statement": "Qual é o resultado correto de 30 - 12 ÷ 3?",
+      "options": [
+        "24",
+        "27",
+        "29",
+        "26"
+      ],
+      "answer": "D",
+      "difficulty": "Média",
+      "tags": [
+        "precedência"
+      ],
+      "hint": "Divida 12 por 3 antes de subtrair.",
+      "explanation": "Respeitando a ordem de operações, 30 - 12 ÷ 3 = 26.",
+      "active": true
+    },
+    {
+      "id": "ca26-0118",
+      "disciplineId": "mathematics",
+      "activityTypeId": "precedence",
+      "statement": "Qual é o resultado correto de 6 × (7 - 2)?",
+      "options": [
+        "30",
+        "28",
+        "33",
+        "31"
+      ],
+      "answer": "A",
+      "difficulty": "Média",
+      "tags": [
+        "precedência"
+      ],
+      "hint": "Resolva 7−2 dentro dos parênteses.",
+      "explanation": "Respeitando a ordem de operações, 6 × (7 - 2) = 30.",
+      "active": true
+    },
+    {
+      "id": "ca26-0119",
+      "disciplineId": "mathematics",
+      "activityTypeId": "precedence",
+      "statement": "Qual é o resultado correto de 2³ + 5 × 2?",
+      "options": [
+        "19",
+        "18",
+        "16",
+        "21"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "precedência"
+      ],
+      "hint": "Primeiro potência, depois multiplicação, por último soma.",
+      "explanation": "Respeitando a ordem de operações, 2³ + 5 × 2 = 18.",
+      "active": true
+    },
+    {
+      "id": "ca26-0120",
+      "disciplineId": "mathematics",
+      "activityTypeId": "precedence",
+      "statement": "Qual é o resultado correto de 48 ÷ 6 + 3²?",
+      "options": [
+        "20",
+        "15",
+        "18",
+        "17"
+      ],
+      "answer": "D",
+      "difficulty": "Média",
+      "tags": [
+        "precedência"
+      ],
+      "hint": "Divisão e potência vêm antes da adição.",
+      "explanation": "Respeitando a ordem de operações, 48 ÷ 6 + 3² = 17.",
+      "active": true
+    },
+    {
+      "id": "ca26-0121",
+      "disciplineId": "mathematics",
+      "activityTypeId": "precedence",
+      "statement": "Qual é o resultado correto de 5 × 4 - 3 × 2?",
+      "options": [
+        "15",
+        "17",
+        "14",
+        "12"
+      ],
+      "answer": "C",
+      "difficulty": "Média",
+      "tags": [
+        "precedência"
+      ],
+      "hint": "Faça as duas multiplicações antes de subtrair.",
+      "explanation": "Respeitando a ordem de operações, 5 × 4 - 3 × 2 = 14.",
+      "active": true
+    },
+    {
+      "id": "ca26-0122",
+      "disciplineId": "mathematics",
+      "activityTypeId": "precedence",
+      "statement": "Qual é o resultado correto de (18 - 6) ÷ 4?",
+      "options": [
+        "6",
+        "1",
+        "4",
+        "3"
+      ],
+      "answer": "D",
+      "difficulty": "Média",
+      "tags": [
+        "precedência"
+      ],
+      "hint": "Resolva 18−6 e divida o resultado por 4.",
+      "explanation": "Respeitando a ordem de operações, (18 - 6) ÷ 4 = 3.",
+      "active": true
+    },
+    {
+      "id": "ca26-0123",
+      "disciplineId": "mathematics",
+      "activityTypeId": "precedence",
+      "statement": "Qual é o resultado correto de 7 + 2 × (9 - 4)?",
+      "options": [
+        "15",
+        "18",
+        "20",
+        "17"
+      ],
+      "answer": "D",
+      "difficulty": "Média",
+      "tags": [
+        "precedência"
+      ],
+      "hint": "Parênteses, depois multiplicação e por fim soma.",
+      "explanation": "Respeitando a ordem de operações, 7 + 2 × (9 - 4) = 17.",
+      "active": true
+    },
+    {
+      "id": "ca26-0124",
+      "disciplineId": "mathematics",
+      "activityTypeId": "precedence",
+      "statement": "Qual é o resultado correto de 4² - 3 × 5?",
+      "options": [
+        "2",
+        "1",
+        "-1",
+        "4"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "precedência"
+      ],
+      "hint": "Calcule 4² e 3×5 antes da subtração.",
+      "explanation": "Respeitando a ordem de operações, 4² - 3 × 5 = 1.",
+      "active": true
+    },
+    {
+      "id": "ca26-0125",
+      "disciplineId": "mathematics",
+      "activityTypeId": "truth-table",
+      "statement": "Considere p=V e q=V. Qual é o resultado de p ∧ q? Responda V ou F.",
+      "options": [],
+      "answer": "V",
+      "difficulty": "Fácil",
+      "tags": [
+        "lógica",
+        "tabela-verdade"
+      ],
+      "hint": "A conjunção (E) exige que ambas sejam verdadeiras.",
+      "explanation": "p=V, q=V; p ∧ q = V.",
+      "active": true
+    },
+    {
+      "id": "ca26-0126",
+      "disciplineId": "mathematics",
+      "activityTypeId": "truth-table",
+      "statement": "Considere p=V e q=F. Qual é o resultado de p ∧ q? Responda V ou F.",
+      "options": [],
+      "answer": "F",
+      "difficulty": "Fácil",
+      "tags": [
+        "lógica",
+        "tabela-verdade"
+      ],
+      "hint": "A conjunção (E) exige que ambas sejam verdadeiras.",
+      "explanation": "p=V, q=F; p ∧ q = F.",
+      "active": true
+    },
+    {
+      "id": "ca26-0127",
+      "disciplineId": "mathematics",
+      "activityTypeId": "truth-table",
+      "statement": "Considere p=F e q=V. Qual é o resultado de p ∧ q? Responda V ou F.",
+      "options": [],
+      "answer": "F",
+      "difficulty": "Fácil",
+      "tags": [
+        "lógica",
+        "tabela-verdade"
+      ],
+      "hint": "A conjunção (E) exige que ambas sejam verdadeiras.",
+      "explanation": "p=F, q=V; p ∧ q = F.",
+      "active": true
+    },
+    {
+      "id": "ca26-0128",
+      "disciplineId": "mathematics",
+      "activityTypeId": "truth-table",
+      "statement": "Considere p=F e q=F. Qual é o resultado de p ∧ q? Responda V ou F.",
+      "options": [],
+      "answer": "F",
+      "difficulty": "Fácil",
+      "tags": [
+        "lógica",
+        "tabela-verdade"
+      ],
+      "hint": "A conjunção (E) exige que ambas sejam verdadeiras.",
+      "explanation": "p=F, q=F; p ∧ q = F.",
+      "active": true
+    },
+    {
+      "id": "ca26-0129",
+      "disciplineId": "mathematics",
+      "activityTypeId": "truth-table",
+      "statement": "Considere p=V e q=V. Qual é o resultado de p ∨ q? Responda V ou F.",
+      "options": [],
+      "answer": "V",
+      "difficulty": "Fácil",
+      "tags": [
+        "lógica",
+        "tabela-verdade"
+      ],
+      "hint": "A disjunção inclusiva (OU) só é falsa quando ambas são falsas.",
+      "explanation": "p=V, q=V; p ∨ q = V.",
+      "active": true
+    },
+    {
+      "id": "ca26-0130",
+      "disciplineId": "mathematics",
+      "activityTypeId": "truth-table",
+      "statement": "Considere p=V e q=F. Qual é o resultado de p ∨ q? Responda V ou F.",
+      "options": [],
+      "answer": "V",
+      "difficulty": "Fácil",
+      "tags": [
+        "lógica",
+        "tabela-verdade"
+      ],
+      "hint": "A disjunção inclusiva (OU) só é falsa quando ambas são falsas.",
+      "explanation": "p=V, q=F; p ∨ q = V.",
+      "active": true
+    },
+    {
+      "id": "ca26-0131",
+      "disciplineId": "mathematics",
+      "activityTypeId": "truth-table",
+      "statement": "Considere p=F e q=V. Qual é o resultado de p ∨ q? Responda V ou F.",
+      "options": [],
+      "answer": "V",
+      "difficulty": "Fácil",
+      "tags": [
+        "lógica",
+        "tabela-verdade"
+      ],
+      "hint": "A disjunção inclusiva (OU) só é falsa quando ambas são falsas.",
+      "explanation": "p=F, q=V; p ∨ q = V.",
+      "active": true
+    },
+    {
+      "id": "ca26-0132",
+      "disciplineId": "mathematics",
+      "activityTypeId": "truth-table",
+      "statement": "Considere p=F e q=F. Qual é o resultado de p ∨ q? Responda V ou F.",
+      "options": [],
+      "answer": "F",
+      "difficulty": "Fácil",
+      "tags": [
+        "lógica",
+        "tabela-verdade"
+      ],
+      "hint": "A disjunção inclusiva (OU) só é falsa quando ambas são falsas.",
+      "explanation": "p=F, q=F; p ∨ q = F.",
+      "active": true
+    },
+    {
+      "id": "ca26-0133",
+      "disciplineId": "mathematics",
+      "activityTypeId": "truth-table",
+      "statement": "Considere p=V e q=V. Qual é o resultado de p ⊕ q? Responda V ou F.",
+      "options": [],
+      "answer": "F",
+      "difficulty": "Fácil",
+      "tags": [
+        "lógica",
+        "tabela-verdade"
+      ],
+      "hint": "O OU exclusivo é verdadeiro quando exatamente uma proposição é verdadeira.",
+      "explanation": "p=V, q=V; p ⊕ q = F.",
+      "active": true
+    },
+    {
+      "id": "ca26-0134",
+      "disciplineId": "mathematics",
+      "activityTypeId": "truth-table",
+      "statement": "Considere p=V e q=F. Qual é o resultado de p ⊕ q? Responda V ou F.",
+      "options": [],
+      "answer": "V",
+      "difficulty": "Fácil",
+      "tags": [
+        "lógica",
+        "tabela-verdade"
+      ],
+      "hint": "O OU exclusivo é verdadeiro quando exatamente uma proposição é verdadeira.",
+      "explanation": "p=V, q=F; p ⊕ q = V.",
+      "active": true
+    },
+    {
+      "id": "ca26-0135",
+      "disciplineId": "mathematics",
+      "activityTypeId": "truth-table",
+      "statement": "Considere p=F e q=V. Qual é o resultado de p ⊕ q? Responda V ou F.",
+      "options": [],
+      "answer": "V",
+      "difficulty": "Fácil",
+      "tags": [
+        "lógica",
+        "tabela-verdade"
+      ],
+      "hint": "O OU exclusivo é verdadeiro quando exatamente uma proposição é verdadeira.",
+      "explanation": "p=F, q=V; p ⊕ q = V.",
+      "active": true
+    },
+    {
+      "id": "ca26-0136",
+      "disciplineId": "mathematics",
+      "activityTypeId": "truth-table",
+      "statement": "Considere p=F e q=F. Qual é o resultado de p ⊕ q? Responda V ou F.",
+      "options": [],
+      "answer": "F",
+      "difficulty": "Fácil",
+      "tags": [
+        "lógica",
+        "tabela-verdade"
+      ],
+      "hint": "O OU exclusivo é verdadeiro quando exatamente uma proposição é verdadeira.",
+      "explanation": "p=F, q=F; p ⊕ q = F.",
+      "active": true
+    },
+    {
+      "id": "ca26-0137",
+      "disciplineId": "mathematics",
+      "activityTypeId": "logic-challenge",
+      "statement": "Qual conectivo é falso apenas quando p é verdadeiro e q é falso?",
+      "options": [
+        "Bicondicional",
+        "Implicação",
+        "Conjunção",
+        "Disjunção"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "lógica",
+        "desafio"
+      ],
+      "hint": "Na implicação p→q, há uma única combinação falsa: V→F.",
+      "explanation": "A implicação só é falsa em V→F.",
+      "active": true
+    },
+    {
+      "id": "ca26-0138",
+      "disciplineId": "mathematics",
+      "activityTypeId": "logic-challenge",
+      "statement": "Qual conectivo é verdadeiro quando p e q têm o mesmo valor lógico?",
+      "options": [
+        "Negação",
+        "Bicondicional",
+        "XOR",
+        "Conjunção"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "lógica",
+        "desafio"
+      ],
+      "hint": "A equivalência p↔q compara se os valores coincidem.",
+      "explanation": "Bicondicional é verdadeiro em VV e FF.",
+      "active": true
+    },
+    {
+      "id": "ca26-0139",
+      "disciplineId": "mathematics",
+      "activityTypeId": "logic-challenge",
+      "statement": "A negação de V é qual valor?",
+      "options": [
+        "Indefinido",
+        "VV",
+        "V",
+        "F"
+      ],
+      "answer": "D",
+      "difficulty": "Média",
+      "tags": [
+        "lógica",
+        "desafio"
+      ],
+      "hint": "A negação inverte o valor lógico.",
+      "explanation": "¬V = F.",
+      "active": true
+    },
+    {
+      "id": "ca26-0140",
+      "disciplineId": "mathematics",
+      "activityTypeId": "logic-challenge",
+      "statement": "Qual conectivo corresponde ao E lógico?",
+      "options": [
+        "Disjunção",
+        "Implicação",
+        "Conjunção",
+        "Negação"
+      ],
+      "answer": "C",
+      "difficulty": "Média",
+      "tags": [
+        "lógica",
+        "desafio"
+      ],
+      "hint": "O símbolo da conjunção é ∧.",
+      "explanation": "Conjunção corresponde a p∧q.",
+      "active": true
+    },
+    {
+      "id": "ca26-0141",
+      "disciplineId": "mathematics",
+      "activityTypeId": "logic-challenge",
+      "statement": "Qual conectivo corresponde ao OU exclusivo?",
+      "options": [
+        "AND",
+        "OR inclusivo",
+        "NOT",
+        "XOR"
+      ],
+      "answer": "D",
+      "difficulty": "Média",
+      "tags": [
+        "lógica",
+        "desafio"
+      ],
+      "hint": "O exclusivo exige apenas uma proposição verdadeira.",
+      "explanation": "XOR é verdadeiro quando exatamente uma entrada é verdadeira.",
+      "active": true
+    },
+    {
+      "id": "ca26-0142",
+      "disciplineId": "mathematics",
+      "activityTypeId": "logic-challenge",
+      "statement": "Quantas linhas tem a tabela-verdade com 3 proposições simples?",
+      "options": [
+        "4",
+        "16",
+        "8",
+        "6"
+      ],
+      "answer": "C",
+      "difficulty": "Média",
+      "tags": [
+        "lógica",
+        "desafio"
+      ],
+      "hint": "Para n proposições, existem 2ⁿ combinações.",
+      "explanation": "2³ = 8 linhas.",
+      "active": true
+    },
+    {
+      "id": "ca26-0143",
+      "disciplineId": "mathematics",
+      "activityTypeId": "logic-challenge",
+      "statement": "Quantas linhas tem a tabela-verdade com 4 proposições simples?",
+      "options": [
+        "16",
+        "32",
+        "8",
+        "12"
+      ],
+      "answer": "A",
+      "difficulty": "Média",
+      "tags": [
+        "lógica",
+        "desafio"
+      ],
+      "hint": "Calcule 2⁴.",
+      "explanation": "2⁴ = 16 linhas.",
+      "active": true
+    },
+    {
+      "id": "ca26-0144",
+      "disciplineId": "mathematics",
+      "activityTypeId": "logic-challenge",
+      "statement": "Se p=V e q=F, qual o valor de p→q?",
+      "options": [
+        "Indefinido",
+        "VV",
+        "V",
+        "F"
+      ],
+      "answer": "D",
+      "difficulty": "Média",
+      "tags": [
+        "lógica",
+        "desafio"
+      ],
+      "hint": "Implicação falha quando a hipótese é verdadeira e a conclusão falsa.",
+      "explanation": "V→F = F.",
+      "active": true
+    },
+    {
+      "id": "ca26-0145",
+      "disciplineId": "mathematics",
+      "activityTypeId": "logic-challenge",
+      "statement": "Se p=F e q=F, qual o valor de p↔q?",
+      "options": [
+        "V",
+        "Indefinido",
+        "VV",
+        "F"
+      ],
+      "answer": "A",
+      "difficulty": "Média",
+      "tags": [
+        "lógica",
+        "desafio"
+      ],
+      "hint": "No bicondicional, valores iguais produzem verdadeiro.",
+      "explanation": "F↔F = V.",
+      "active": true
+    },
+    {
+      "id": "ca26-0146",
+      "disciplineId": "mathematics",
+      "activityTypeId": "logic-challenge",
+      "statement": "Se p=F e q=V, qual o valor de ¬p ∧ q?",
+      "options": [
+        "F",
+        "V",
+        "VV",
+        "Indefinido"
+      ],
+      "answer": "B",
+      "difficulty": "Média",
+      "tags": [
+        "lógica",
+        "desafio"
+      ],
+      "hint": "Negue p antes de aplicar o E lógico.",
+      "explanation": "¬F ∧ V = V ∧ V = V.",
+      "active": true
+    },
+    {
+      "id": "ca26-0147",
+      "disciplineId": "mathematics",
+      "activityTypeId": "logic-challenge",
+      "statement": "Se p=V e q=F, qual o valor de ¬(p∧q)?",
+      "options": [
+        "V",
+        "F",
+        "Indefinido",
+        "VV"
+      ],
+      "answer": "A",
+      "difficulty": "Média",
+      "tags": [
+        "lógica",
+        "desafio"
+      ],
+      "hint": "Calcule a conjunção primeiro e depois negue.",
+      "explanation": "¬(V∧F) = ¬F = V.",
+      "active": true
+    },
+    {
+      "id": "ca26-0148",
+      "disciplineId": "mathematics",
+      "activityTypeId": "logic-challenge",
+      "statement": "Se p=V e q=V, qual o valor de p⊕q?",
+      "options": [
+        "F",
+        "VV",
+        "V",
+        "Indefinido"
+      ],
+      "answer": "A",
+      "difficulty": "Média",
+      "tags": [
+        "lógica",
+        "desafio"
+      ],
+      "hint": "XOR não aceita duas entradas verdadeiras.",
+      "explanation": "V⊕V = F.",
+      "active": true
+    }
+  ]
+}

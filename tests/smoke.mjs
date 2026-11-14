@@ -5,7 +5,7 @@ const base=resolve(import.meta.dirname,'..');
 const ui=readFileSync(resolve(base,'src/ui.js'),'utf8');
 const storage=readFileSync(resolve(base,'src/storage.js'),'utf8');
 const pkg=JSON.parse(readFileSync(resolve(base,'package.json'),'utf8'));
-assert.equal(pkg.version,'1.7.1');
+assert.equal(pkg.version,'1.9.1');
 for(const route of ['/presentation','/admin/settings','/admin/questions','/admin/history']) assert.ok(ui.includes(route),`Rota ausente: ${route}`);
 for(const store of ['games','gameTeams','activities','responses','academicScores','competitionScores','cardUsages','questions']) assert.ok(storage.includes(`'${store}'`),`Store ausente: ${store}`);
 assert.ok(ui.includes("path==='/admin/games/new'?null"),'Nova partida deve preceder a rota dinâmica');
@@ -29,3 +29,7 @@ assert.ok(ui.includes('queue-collective'),'Diferenciação de atividades ausente
 assert.ok(ui.includes("function arenaConfirm("),"Modal de confirmação ausente");
 assert.ok(ui.includes("installArenaShortcuts"),"Atalhos ausentes");
 assert.ok(existsSync(resolve(base,"public/manual-do-professor.pdf")),"Manual não incorporado");
+
+assert.ok(ui.includes("else await root.requestFullscreen()"),"Tela cheia deve ser aplicada ao contêiner persistente");
+assert.ok(!ui.includes("root.querySelector('main').requestFullscreen()"),"Tela cheia não deve ser aplicada à projeção substituível");
+assert.ok(ui.includes("responses:snapshot.responses.filter(x=>activityIds.has(x.activityId))"),"Respostas devem ser filtradas por atividades selecionadas");
