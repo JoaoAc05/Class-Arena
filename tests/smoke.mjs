@@ -5,7 +5,7 @@ const base=resolve(import.meta.dirname,'..');
 const ui=readFileSync(resolve(base,'src/ui.js'),'utf8');
 const storage=readFileSync(resolve(base,'src/storage.js'),'utf8');
 const pkg=JSON.parse(readFileSync(resolve(base,'package.json'),'utf8'));
-assert.equal(pkg.version,'1.9.1');
+assert.equal(pkg.version,'1.9.5');
 for(const route of ['/presentation','/admin/settings','/admin/questions','/admin/history']) assert.ok(ui.includes(route),`Rota ausente: ${route}`);
 for(const store of ['games','gameTeams','activities','responses','academicScores','competitionScores','cardUsages','questions']) assert.ok(storage.includes(`'${store}'`),`Store ausente: ${store}`);
 assert.ok(ui.includes("path==='/admin/games/new'?null"),'Nova partida deve preceder a rota dinâmica');
@@ -33,3 +33,11 @@ assert.ok(existsSync(resolve(base,"public/manual-do-professor.pdf")),"Manual nã
 assert.ok(ui.includes("else await root.requestFullscreen()"),"Tela cheia deve ser aplicada ao contêiner persistente");
 assert.ok(!ui.includes("root.querySelector('main').requestFullscreen()"),"Tela cheia não deve ser aplicada à projeção substituível");
 assert.ok(ui.includes("responses:snapshot.responses.filter(x=>activityIds.has(x.activityId))"),"Respostas devem ser filtradas por atividades selecionadas");
+
+assert.ok(ui.includes('interval-duel-confirm'),'Duelo entre atividades ausente');
+assert.ok(ui.includes('presentation-ranking'),'Ranking parcial ausente');
+assert.ok(css.includes('grid-template-columns:repeat(3,minmax(0,1fr))'),'Layout coletivo não adaptado');
+
+assert.ok(ui.includes('⚔ Usar carta Duelo</button>'),'Texto do botão Duelo incorreto');
+assert.ok(css.includes('border:1px solid #b5c1e2') && css.includes('background:#5ba8ff36'),'Estilo do painel Duelo incorreto');
+assert.ok(ui.includes('const writeMember=(member,i)=>') && ui.includes('ensure(height);'),'Paginação individual de integrantes ausente');

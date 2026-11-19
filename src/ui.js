@@ -77,7 +77,7 @@ export async function start(root,db) {
   if(page==='disciplines') bindDisciplines(root,db,ds,types);
   if(page==='game-new') bindGameForm(root,db,ds,teams,types);
 }
-function layout(page){return `<div class="shell"><aside><a class="brand" href="/admin"><img class="ads-logo" src="/assets/logo-ads.png" alt="Logo do curso de ADS"><span><strong>CLASS ARENA</strong><small>CLASSROOM COMPETITION</small></span></a><p class="nav-label">ESPAÇO DE TRABALHO</p><nav><a class="${page==='home'?'active':''}" href="/admin">▦　Visão geral</a><a class="${page==='disciplines'?'active':''}" href="/admin/disciplines">▤　Disciplinas</a><a class="${page==='teams'?'active':''}" href="/admin/teams">◈　Equipes</a><a class="${['games','game-new','game-detail'].includes(page)?'active':''}" href="/admin/games">◷　Partidas</a><a class="${page==='questions'?'active':''}" href="/admin/questions">◷　Banco de questões</a><a class="${['history','history-detail'].includes(page)?'active':''}" href="/admin/history">▧　Histórico</a><a class="${page==='settings'?'active':''}" href="/admin/settings">⚙　Configurações</a><a href="/manual-do-professor.pdf" target="_blank" rel="noopener">ⓘ　Manual do professor</a><a href="/manual-do-aluno.pdf" target="_blank" rel="noopener">ⓘ　Manual do aluno</a></nav><div class="sidefoot">● Modo local<br><small>Dados neste navegador</small></div></aside><main><header><div><small>PAINEL DO PROFESSOR</small><h1>${page==='home'?'Visão geral':page==='teams'?'Equipes':page==='disciplines'?'Disciplinas':page==='game-detail'?'Detalhes da partida':page==='games'?'Partidas':page==='questions'?'Banco de questões':page==='history'?'Histórico de partidas':page==='history-detail'?'Relatório da partida':page==='settings'?'Configurações':'Nova partida'}</h1></div><span>● AMBIENTE LOCAL</span></header><div id="content"></div><footer>CLASS ARENA / v1.9.0 <span>Execução local · Dados persistidos</span></footer></main></div><div id="toast"></div>`}
+function layout(page){return `<div class="shell"><aside><a class="brand" href="/admin"><img class="ads-logo" src="/assets/logo-ads.png" alt="Logo do curso de ADS"><span><strong>CLASS ARENA</strong><small>CLASSROOM COMPETITION</small></span></a><p class="nav-label">ESPAÇO DE TRABALHO</p><nav><a class="${page==='home'?'active':''}" href="/admin">▦　Visão geral</a><a class="${page==='disciplines'?'active':''}" href="/admin/disciplines">▤　Disciplinas</a><a class="${page==='teams'?'active':''}" href="/admin/teams">◈　Equipes</a><a class="${['games','game-new','game-detail'].includes(page)?'active':''}" href="/admin/games">◷　Partidas</a><a class="${page==='questions'?'active':''}" href="/admin/questions">◷　Banco de questões</a><a class="${['history','history-detail'].includes(page)?'active':''}" href="/admin/history">▧　Histórico</a><a class="${page==='settings'?'active':''}" href="/admin/settings">⚙　Configurações</a><a href="/manual-do-professor.pdf" target="_blank" rel="noopener">ⓘ　Manual do professor</a><a href="/manual-do-aluno.pdf" target="_blank" rel="noopener">ⓘ　Manual do aluno</a></nav><div class="sidefoot">● Modo local<br><small>Dados neste navegador</small></div></aside><main><header><div><small>PAINEL DO PROFESSOR</small><h1>${page==='home'?'Visão geral':page==='teams'?'Equipes':page==='disciplines'?'Disciplinas':page==='game-detail'?'Detalhes da partida':page==='games'?'Partidas':page==='questions'?'Banco de questões':page==='history'?'Histórico de partidas':page==='history-detail'?'Relatório da partida':page==='settings'?'Configurações':'Nova partida'}</h1></div><span>● AMBIENTE LOCAL</span></header><div id="content"></div><footer>CLASS ARENA / v1.9.5 <span>Execução local · Dados persistidos</span></footer></main></div><div id="toast"></div>`}
 
 const BACKUP_STORES=['disciplines','activityTypes','questions','teams','themes','games','gameTeams','activities','encounters','responses','academicScores','competitionScores','cardUsages','settings'];
 function settingsPage(){
@@ -283,13 +283,35 @@ async function renderHistoryDetail(container,db,gameId){
  const answerRows=activities.flatMap(a=>responses.filter(r=>r.activityId===a.id).map(r=>({activity:a,team:teamName(r.gameTeamId),response:r})));
  const rows=ranked.map((t,i)=>[i+1,t.nameSnapshot,t.score.academic,t.score.competitive,Math.max(0,10-t.score.academic)]);
  const table=(headers,values)=>`<div class="history-scroll"><table class="history-table"><thead><tr>${headers.map(h=>`<th>${esc(h)}</th>`).join('')}</tr></thead><tbody>${values.map(row=>`<tr>${row.map(v=>`<td>${esc(v)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
- container.innerHTML=`<section class="intro"><div><small>RELATÓRIO DA PARTIDA</small><h2>${esc(game.name)}</h2><p>${esc(game.status==='completed'?'Concluída':game.status==='in_progress'?'Em andamento':'Rascunho')} · Criada em ${historyDate(game.createdAt)} · ${teams.length} equipes</p></div><a class="secondary" href="/admin/history">← Histórico</a></section><div class="actions"><button id="history-export-pdf" class="primary">Baixar relatório PDF</button><button id="history-export-csv" class="secondary">Exportar notas CSV</button><button id="history-export-json" class="secondary">Exportar relatório JSON</button></div>
+ container.innerHTML=`<section class="intro"><div><small>RELATÓRIO DA PARTIDA</small><h2>${esc(game.name)}</h2><p>${esc(game.status==='completed'?'Concluída':game.status==='in_progress'?'Em andamento':'Rascunho')} · Criada em ${historyDate(game.createdAt)} · ${teams.length} equipes</p></div><a class="secondary" href="/admin/history">← Histórico</a></section><div class="actions"><button id="history-refresh-members" class="secondary">↻ Atualizar participantes</button><button id="history-export-pdf" class="primary">Baixar relatório PDF</button><button id="history-export-csv" class="secondary">Exportar notas CSV</button><button id="history-export-json" class="secondary">Exportar relatório JSON</button></div>
  <section class="form-panel"><h3>Classificação e notas</h3><p class="muted">Ranking por pontuação competitiva; notas acadêmicas limitadas a 10.</p>${table(['Posição','Equipe','Nota / 10','Competição','Falta para 10'],rows)}</section>
  <section class="form-panel"><h3>Atividades (${activities.length})</h3>${table(['Ordem','Atividade','Modalidade','Situação','Participantes','Conclusão'],activities.map(a=>[a.order,a.titleSnapshot||a.activityTypeId,a.activityTypeId,a.status,(a.participants||[]).map(teamName).join(', '),historyDate(a.completedAt)]))}</section>
  <section class="form-panel"><h3>Respostas registradas (${answerRows.length})</h3>${answerRows.length?table(['Atividade','Equipe','Questão','Resposta','Gabarito','Resultado','Nota','Competição'],answerRows.map(({activity:a,team,response:r})=>[a.titleSnapshot||a.activityTypeId,team,a.questionSnapshot?.statement||'—',r.answer,a.questionSnapshot?.answer||'—',r.correct?'Correta':'Incorreta',r.academicPoints||0,r.competitionPoints||0])):'<p class="muted">Nenhuma resposta registrada.</p>'}</section>
  <section class="form-panel"><h3>Confrontos (${encounters.length})</h3>${encounters.length?table(['Rodada','Equipe A','Equipe B','Situação'],encounters.sort((a,b)=>a.round-b.round).map(e=>[e.round,teamName(e.teamAId),teamName(e.teamBId),e.status||'—'])):'<p class="muted">Nenhum confronto cadastrado.</p>'}</section>
  <section class="form-panel"><h3>Cartas utilizadas (${cards.length})</h3>${cards.length?table(['Equipe','Carta','Detalhes','Utilização'],cards.map(c=>[teamName(c.gameTeamId),historyLabel(c.cardType),c.detail||'—',historyDate(c.usedAt)])):'<p class="muted">Nenhuma carta utilizada.</p>'}</section>
  <section class="form-panel"><h3>Ajustes manuais</h3>${academicAdjustments.length+competitionAdjustments.length?table(['Equipe','Categoria','Pontos','Justificativa','Data'],[...academicAdjustments.map(x=>({...x,category:'Acadêmica'})),...competitionAdjustments.map(x=>({...x,category:'Competitiva'}))].map(x=>[teamName(x.gameTeamId),x.category,x.points,x.reason||'—',historyDate(x.createdAt)])):'<p class="muted">Nenhum ajuste manual.</p>'}</section>`;
+ const refreshButton=container.querySelector('#history-refresh-members');
+ refreshButton.onclick=async()=>{
+  if(refreshButton.disabled)return;
+  const registeredTeams=await db.all('teams');
+  const changes=teams.map(snapshot=>({snapshot,registered:registeredTeams.find(team=>team.id===snapshot.teamId)})).filter(row=>row.registered);
+  const missing=teams.filter(snapshot=>!registeredTeams.some(team=>team.id===snapshot.teamId));
+  if(!changes.length){alert('Nenhuma equipe desta partida foi encontrada no cadastro atual. Nenhum participante foi alterado.');return;}
+  const confirmed=await arenaConfirm(`Atualizar os integrantes de ${changes.length} equipe(s) com os nomes do cadastro atual? ${missing.length?`${missing.length} equipe(s) sem cadastro correspondente serão mantidas sem alteração. `:''}Esta ação substituirá a lista de integrantes armazenada no histórico desta partida e afetará as próximas exportações PDF e JSON.`);
+  if(!confirmed)return;
+  refreshButton.disabled=true;
+  try{
+   const tx=db.raw.transaction('gameTeams','readwrite');
+   const store=tx.objectStore('gameTeams');
+   for(const {snapshot,registered} of changes){
+    store.put({...snapshot,membersSnapshot:Array.isArray(registered.members)?[...registered.members]:[]});
+   }
+   await done(tx);
+   channel.postMessage({type:'game:updated',gameId});
+   alert(`Participantes atualizados em ${changes.length} equipe(s).${missing.length?` ${missing.length} equipe(s) sem cadastro correspondente foram preservadas.`:''} O relatório será recarregado.`);
+   await renderHistoryDetail(container,db,gameId);
+  }catch(error){console.error(error);alert('Falha ao atualizar participantes: '+error.message);refreshButton.disabled=false;}
+ };
  const base='class-arena-'+game.id.slice(0,8);
  container.querySelector('#history-export-pdf').onclick=async()=>{try{await exportGamePdf({game,teams,activities,encounters,responses,cards,academicAdjustments,competitionAdjustments,ranked,teamName});}catch(err){console.error(err);alert('Falha ao gerar PDF: '+err.message);}};
  container.querySelector('#history-export-csv').onclick=()=>downloadHistoryFile(base+'-notas.csv',csvHistory([['Posição','Equipe','Nota acadêmica','Pontos competitivos','Falta para 10'],...rows]),'text/csv;charset=utf-8');
@@ -365,9 +387,24 @@ async function exportGamePdf({game,teams,activities,encounters,responses,cards,a
  ensure(35);title('Integrantes das equipes');
  for(const team of teams){
   const members=Array.isArray(team.membersSnapshot)?team.membersSnapshot:[];
-  ensure(14);doc.setFont('helvetica','bold');doc.setFontSize(10);doc.setTextColor(...dark);
+  // Reserva espaço para o cabeçalho e o primeiro integrante na mesma página.
+  const firstMember=members.length?'1. '+txt(members[0]):'Nenhum integrante cadastrado.';
+  doc.setFont('helvetica','normal');doc.setFontSize(9);
+  const firstLines=doc.splitTextToSize(firstMember,usable-4);
+  ensure(6+firstLines.length*4.6+4);
+  doc.setFont('helvetica','bold');doc.setFontSize(10);doc.setTextColor(...dark);
   doc.text(txt(team.nameSnapshot),L,y);y+=6;
-  if(members.length)members.forEach((member,i)=>para((i+1)+'. '+txt(member),4));
+  // Cada nome é um bloco indivisível. Se não couber, a página muda ANTES da escrita.
+  const writeMember=(member,i)=>{
+   const value=(i+1)+'. '+txt(member);
+   doc.setFont('helvetica','normal');doc.setFontSize(9);doc.setTextColor(...dark);
+   const lines=doc.splitTextToSize(value,usable-4);
+   const height=lines.length*4.6+4;
+   ensure(height);
+   doc.setFont('helvetica','normal');doc.setFontSize(9);doc.setTextColor(...dark);
+   doc.text(lines,L+4,y);y+=height;
+  };
+  if(members.length)members.forEach(writeMember);
   else para('Nenhum integrante cadastrado.',4);
   y+=3;
  }
@@ -392,7 +429,8 @@ async function renderScorePanel(root,db,game,teams,activities){
  panel.innerHTML=`<div class="section-heading"><div><h3>Notas acadêmicas e ranking competitivo</h3><p class="muted">Notas de 0 a 10; confrontos pontuam somente no ranking. Ajustes são auditáveis e não alteram as respostas originais.</p></div><span class="status">AVALIAÇÃO</span></div>
  <div class="scoreboard-table"><table><thead><tr><th>Pos.</th><th>Equipe</th><th>Nota / 10</th><th>Pontos competitivos</th><th>Falta para 10</th></tr></thead><tbody>${ranking.map((t,i)=>`<tr><td>${i+1}º</td><td>${esc(t.nameSnapshot)}</td><td><b>${t.score.academic.toFixed(1).replace('.',',')}</b></td><td>${t.score.competitive}</td><td>${Math.max(0,10-t.score.academic).toFixed(1).replace('.',',')}</td></tr>`).join('')}</tbody></table></div>
  <h4>Ajuste manual de pontuação</h4><div class="score-adjust"><label>Equipe<select id="score-team">${teams.map(t=>`<option value="${esc(t.id)}">${esc(t.nameSnapshot)}</option>`).join('')}</select></label><label>Tipo<select id="score-kind"><option value="academic">Acadêmica</option><option value="competitive">Competitiva</option></select></label><label>Ajuste (+ ou −)<input type="number" id="score-delta" step="0.5" value="0.5"></label><label>Justificativa<input id="score-reason" maxlength="160" placeholder="Ex.: correção de resposta"></label><button class="secondary" id="score-save">Aplicar ajuste</button></div>
- <div class="actions"><button class="secondary" id="score-export">Exportar placar CSV</button>${!activities.some(a=>a.status==='active')?'<button class="primary" id="recovery-add">＋ Rodada de recuperação</button>':''}</div>
+ <div class="actions"><button class="secondary" id="score-export">Exportar placar CSV</button>${!activities.some(a=>a.status==='active')?'<button class="primary" id="recovery-add">＋ Rodada de recuperação</button><button class="secondary" id="duel-between">⚔️ Usar carta Duelo</button>':''}</div>
+ ${!activities.some(a=>a.status==='active')?`<div class="interval-duel-config" id="interval-duel-config" hidden><p><b>Duelo especial entre atividades</b> · cada equipe só pode usar sua carta Duelo uma vez por partida.</p><div class="score-adjust"><label>Equipe que usa a carta<select id="interval-duel-team">${teams.map(t=>`<option value="${esc(t.id)}">${esc(t.nameSnapshot)}</option>`).join('')}</select></label><label>Equipe adversária<select id="interval-duel-rival">${teams.map(t=>`<option value="${esc(t.id)}">${esc(t.nameSnapshot)}</option>`).join('')}</select></label><button class="primary" id="interval-duel-confirm">Criar duelo bônus</button></div></div>`:''}
  <p class="muted">Recuperação: atividade coletiva de 1 ponto por resposta correta, limitada à nota 10. Apenas equipes abaixo de 10 participam. Uma rodada não garante a recuperação integral.</p>`;
  const container=root.querySelector('#content');container.appendChild(panel);
  panel.querySelector('#score-save').onclick=async()=>{
@@ -406,6 +444,26 @@ async function renderScorePanel(root,db,game,teams,activities){
   const csv=[['Posição','Equipe','Nota acadêmica','Pontos competitivos'],...ranking.map((t,i)=>[i+1,t.nameSnapshot,t.score.academic,t.score.competitive])].map(row=>row.map(v=>'"'+String(v).replaceAll('"','""')+'"').join(';')).join('\r\n');
   const blob=new Blob(['\ufeff'+csv],{type:'text/csv;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='class-arena-placar.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);
  };
+ const between=panel.querySelector('#duel-between');
+ if(between){
+  between.onclick=()=>{const form=panel.querySelector('#interval-duel-config');form.hidden=!form.hidden;};
+  panel.querySelector('#interval-duel-confirm').onclick=async()=>{
+   const teamId=panel.querySelector('#interval-duel-team').value,rivalId=panel.querySelector('#interval-duel-rival').value;
+   const team=teams.find(t=>t.id===teamId),rival=teams.find(t=>t.id===rivalId);
+   if(!team||!rival||teamId===rivalId)return alert('Selecione duas equipes diferentes.');
+   const [used,latestActivities]=await Promise.all([db.all('cardUsages'),db.all('activities')]);
+   if(used.some(c=>c.gameId===game.id&&c.gameTeamId===teamId&&c.cardType==='duel'))return alert(`A equipe ${team.nameSnapshot} já utilizou a carta Duelo nesta partida.`);
+   if(latestActivities.some(a=>a.gameId===game.id&&a.status==='active'))return alert('Aguarde o encerramento da atividade atual.');
+   if(!await arenaConfirm(`A equipe ${team.nameSnapshot} utilizará a carta Duelo contra ${rival.nameSnapshot} durante o intervalo. Criar confronto bônus competitivo?`))return;
+   const now=new Date().toISOString(),order=Math.max(0,...latestActivities.filter(a=>a.gameId===game.id).map(a=>a.order||0))+1;
+   const activity={id:uid(),gameId:game.id,order,activityTypeId:'team-encounter',titleSnapshot:'Duelo bônus · Carta especial',responseType:'pending',scope:'confrontation',status:'pending',participants:[teamId,rivalId],academicWeight:0,encounterId:null,questionSnapshot:null,bonusDuel:true,createdAt:now};
+   const usage={id:uid(),gameId:game.id,activityId:activity.id,gameTeamId:teamId,cardType:'duel',detail:`Duelo bônus contra ${rival.nameSnapshot} (intervalo)`,usedAt:now};
+   const tx=db.raw.transaction(['games','activities','cardUsages'],'readwrite');
+   tx.objectStore('activities').put(activity);tx.objectStore('cardUsages').put(usage);
+   tx.objectStore('games').put({...game,status:'in_progress',completedAt:null,updatedAt:now});
+   try{await done(tx);channel.postMessage({type:'duel:created',gameId:game.id});location.reload();}catch(err){alert('Não foi possível criar o duelo: '+err.message);}
+  };
+ }
  const recovery=panel.querySelector('#recovery-add');
  if(recovery)recovery.onclick=async()=>{
   const eligible=ranking.filter(t=>t.score.academic<10-0.001);
@@ -635,6 +693,7 @@ let projectionClockInterval=null;
 let lastProjectionActivityId=null;
 let lastProjectionStatus=null;
 let presentationSoundEnabled=false;
+let presentationIntermissionRanking=false;
 let presentationAudio=null;
 function playPresentationTone(){
  if(!presentationSoundEnabled)return;
@@ -661,14 +720,17 @@ async function projection(root,db){
  const game=games.find(g=>g.status==='in_progress')||games[0];const activities=game?(await db.all('activities')).filter(a=>a.gameId===game.id):[];
  const active=activities.find(a=>a.status==='active');const teams=game?(await db.all('gameTeams')).filter(t=>t.gameId===game.id):[];
  const question=active?(active.questionSnapshot||sampleQuestions[active.activityTypeId]):null;
+ if(active)presentationIntermissionRanking=false;
  let results='';
- if(game?.status==='completed'&&!active){
+ if(game&&!active&&(game.status==='completed'||presentationIntermissionRanking)){
    const [responses,academicAdjustments,competitionAdjustments]=await Promise.all(['responses','academicScores','competitionScores'].map(x=>db.all(x)));
    const ranked=teams.map(t=>({...t,score:scoreForTeam(game.id,t.id,responses,academicAdjustments,competitionAdjustments)}))
      .sort((a,b)=>b.score.competitive-a.score.competitive||b.score.academic-a.score.academic||a.nameSnapshot.localeCompare(b.nameSnapshot,'pt-BR'));
-   results=`<div class="projection-results"><small>PARTIDA CONCLUÍDA · RESULTADOS FINAIS</small><h1>${esc(game.name)}</h1><p>Classificação competitiva e notas acadêmicas</p><div class="projection-ranking"><div class="projection-rank-header"><span>Posição / Equipe</span><span>Competição</span><span>Nota / 10</span></div>${ranked.map((t,i)=>`<div class="projection-rank-row ${i===0?'winner':''}"><div>${teamProjectionCard(t,null,i+1)}</div><span>${t.score.competitive} pts</span><span>${t.score.academic.toFixed(1).replace('.',',')}</span></div>`).join('')}</div></div>`;
+   results=`<div class="projection-results"><small>${game.status==='completed'?'PARTIDA CONCLUÍDA · RESULTADOS FINAIS':'INTERVALO · RANKING PARCIAL'}</small><h1>${esc(game.name)}</h1><p>Classificação competitiva e notas acadêmicas</p><div class="projection-ranking"><div class="projection-rank-header"><span>Posição / Equipe</span><span>Competição</span><span>Nota / 10</span></div>${ranked.map((t,i)=>`<div class="projection-rank-row ${i===0?'winner':''}"><div>${teamProjectionCard(t,null,i+1)}</div><span>${t.score.competitive} pts</span><span>${t.score.academic.toFixed(1).replace('.',',')}</span></div>`).join('')}</div></div>`;
  }
- root.innerHTML=`<main class="projection live-projection ${results?'presentation-finale':active?'presentation-active':'presentation-waiting'}"><header><span class="brand"><img class="ads-logo" src="/assets/logo-ads.png" alt="Logo do curso de ADS"> CLASS ARENA</span><div class="projection-header-actions"><span>${esc(game?.name||'MODO DE PROJEÇÃO')}</span><button type="button" id="presentation-sound" aria-label="Alternar sons da projeção" title="Som depende de interação com o navegador">${presentationSoundEnabled?'♫ Som ligado':'♪ Som desligado'}</button><button type="button" id="presentation-fullscreen" aria-label="Alternar tela cheia">⛶ Tela cheia</button></div></header><section class="projection-stage">${results|| (active?`<small>${active.activityTypeId==='ads-challenge'?'⚡ ADS CHALLENGE · RODADA RELÂMPAGO':`ATIVIDADE ${active.order} / ${activities.length} · ${esc(active.titleSnapshot)}`}</small><h1>${esc(question?.statement||'Aguardando questão do professor')}</h1>${question?.options?.length?`<div class="projection-options">${question.options.map((o,i)=>`<div><b>${String.fromCharCode(65+i)})</b> ${esc(o)}</div>`).join('')}</div>`:''}<div class="projection-clock" id="projection-clock">${fmtTime(timeLeft(active.timer))}</div>${active.scope==='confrontation'?`<p>${game.config.duelResponseMode==='first'?'⚡ Somente a primeira equipe responde':'Ambas as equipes podem responder'}</p>`:''}${active.activityTypeId==='ads-challenge'?'<p>⚡ Todas as equipes participam · +1 ponto competitivo por acerto</p>':''}<div class="projection-teams visual-team-grid">${active.participants.map(id=>`<div class="projection-team-with-time">${teamProjectionCard(teams.find(t=>t.id===id))}<small class="team-time" data-team-time="${id}">${fmtTime(teamTimeLeft(active,id))}${active.teamExtraSeconds?.[id]?' · bônus +'+active.teamExtraSeconds[id]+'s':''}</small></div>`).join('')}</div>`:`<small>${game?'PARTIDA EM ANDAMENTO':'ARENA PRONTA'}</small><h1>${game?'Aguardando próxima atividade':'Conhecimento em jogo.'}</h1><p>${game?'O professor iniciará a próxima questão em breve.':'Inicie uma partida no painel do professor.'}</p>`)}</section><footer>CLASS ARENA <span>${game?.status==='completed'?'RESULTADOS FINAIS':active?'RESPONDAM À QUESTÃO':'APRESENTAÇÃO LOCAL'}</span></footer></main>`;
+ root.innerHTML=`<main class="projection live-projection ${results?'presentation-finale':active?'presentation-active':'presentation-waiting'}"><header><span class="brand"><img class="ads-logo" src="/assets/logo-ads.png" alt="Logo do curso de ADS"> CLASS ARENA</span><div class="projection-header-actions"><span>${esc(game?.name||'MODO DE PROJEÇÃO')}</span><button type="button" id="presentation-sound" aria-label="Alternar sons da projeção" title="Som depende de interação com o navegador">${presentationSoundEnabled?'♫ Som ligado':'♪ Som desligado'}</button>${game&&!active&&game.status==='in_progress'?`<button type="button" id="presentation-ranking" aria-pressed="${presentationIntermissionRanking}">${presentationIntermissionRanking?'↩ Voltar ao intervalo':'🏆 Ver ranking'}</button>`:''}<button type="button" id="presentation-fullscreen" aria-label="Alternar tela cheia">⛶ Tela cheia</button></div></header><section class="projection-stage">${results|| (active?`<small>${active.activityTypeId==='ads-challenge'?'⚡ ADS CHALLENGE · RODADA RELÂMPAGO':`ATIVIDADE ${active.order} / ${activities.length} · ${esc(active.titleSnapshot)}`}</small><h1>${esc(question?.statement||'Aguardando questão do professor')}</h1>${question?.options?.length?`<div class="projection-options">${question.options.map((o,i)=>`<div><b>${String.fromCharCode(65+i)})</b> ${esc(o)}</div>`).join('')}</div>`:''}<div class="projection-clock" id="projection-clock">${fmtTime(timeLeft(active.timer))}</div>${active.scope==='confrontation'?`<p>${game.config.duelResponseMode==='first'?'⚡ Somente a primeira equipe responde':'Ambas as equipes podem responder'}</p>`:''}${active.activityTypeId==='ads-challenge'?'<p>⚡ Todas as equipes participam · +1 ponto competitivo por acerto</p>':''}<div class="projection-teams visual-team-grid">${active.participants.map(id=>`<div class="projection-team-with-time">${teamProjectionCard(teams.find(t=>t.id===id))}<small class="team-time" data-team-time="${id}">${fmtTime(teamTimeLeft(active,id))}${active.teamExtraSeconds?.[id]?' · bônus +'+active.teamExtraSeconds[id]+'s':''}</small></div>`).join('')}</div>`:`<small>${game?'PARTIDA EM ANDAMENTO':'ARENA PRONTA'}</small><h1>${game?'Aguardando próxima atividade':'Conhecimento em jogo.'}</h1><p>${game?'O professor iniciará a próxima questão em breve.':'Inicie uma partida no painel do professor.'}</p>`)}</section><footer>CLASS ARENA <span>${game?.status==='completed'?'RESULTADOS FINAIS':active?'RESPONDAM À QUESTÃO':presentationIntermissionRanking?'RANKING PARCIAL':'APRESENTAÇÃO LOCAL'}</span></footer></main>`;
+ const rankingButton=root.querySelector('#presentation-ranking');
+ if(rankingButton)rankingButton.onclick=()=>{presentationIntermissionRanking=!presentationIntermissionRanking;projection(root,db).catch(console.error);};
  const fullScreen=root.querySelector('#presentation-fullscreen');
  if(fullScreen)fullScreen.onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await root.requestFullscreen();}catch(err){console.warn('Tela cheia não disponível:',err);}};
  const sound=root.querySelector('#presentation-sound');
